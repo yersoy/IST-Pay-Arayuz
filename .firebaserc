@@ -1,6 +1,7 @@
 {
   "projects": {
-    "istpayui": "istpayui"
+    "istpayui": "istpayui",
+    "default": "istpayui"
   },
   "targets": {}
 }
