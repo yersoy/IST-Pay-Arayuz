@@ -201,19 +201,9 @@
                             <!--begin::Page title-->
                             <div class="page-title d-flex justify-content-center flex-column me-5">
                                 <!--begin::Title-->
-                                <h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">Anasayfa</h1>
+                                <h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">Başvuru Aşamaları</h1>
                                 <!--end::Title-->
-                                <!--begin::Breadcrumb-->
-                                <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 pt-1">
-                                    <!--begin::Item-->
-                                    <li class="breadcrumb-item text-muted">
-                                        <a href="../../demo8/dist/index.html" class="text-muted text-hover-primary">Özet
-                                            ve İstatistikler</a>
-                                    </li>
-                                    <!--end::Item-->
-                                    <!--begin::Item-->
-                                </ul>
-                                <!--end::Breadcrumb-->
+                                
                             </div>
                             <!--end::Page title-->
                             <!--begin::Action group-->
@@ -233,8 +223,560 @@
                     <div class="post d-flex flex-column-fluid" id="kt_post">
                         <!--begin::Container-->
                         <div id="kt_content_container" class="container-xxl">
-
                             <div class="row g-6 g-xl-9">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <!--begin::Card header-->
+                                        <div class="card-header border-0 pt-6 mb-6">
+                                            <!--begin::Card title-->
+                                            <div class="card-title">
+                                                <!--begin::Search-->
+                                                <div class="d-flex align-items-center position-relative my-1">
+                                                    <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                                                    <span class="svg-icon svg-icon-1 position-absolute ms-6">
+                                                        <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect fill="black" height="2" opacity="0.5" rx="1" transform="rotate(45 17.0365 15.1223)" width="8.15546" x="17.0365" y="15.1223">
+                                                            </rect>
+                                                            <path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                    <!--end::Svg Icon-->
+                                                    <input class="form-control form-control-solid w-250px ps-14" data-kt-user-table-filter="search" placeholder="Aşamalarda Ara.." type="text" />
+                                                </div>
+                                                <!--end::Search-->
+                                            </div>
+                                            <!--begin::Card title-->
+                                            <!--begin::Card toolbar-->
+                                            <div class="card-toolbar">
+                                                <!--begin::Toolbar-->
+                                                <div class="d-flex justify-content-end" data-kt-user-table-toolbar="base">
+                                                    <!--begin::Filter-->
+                                                    <button class="btn btn-light-primary me-3" data-kt-menu-placement="bottom-end" data-kt-menu-trigger="click" type="button">
+                                                        <!--begin::Svg Icon | path: icons/duotune/general/gen031.svg-->
+                                                        <span class="svg-icon svg-icon-2">
+                                                            <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M19.0759 3H4.72777C3.95892 3 3.47768 3.83148 3.86067 4.49814L8.56967 12.6949C9.17923 13.7559 9.5 14.9582 9.5 16.1819V19.5072C9.5 20.2189 10.2223 20.7028 10.8805 20.432L13.8805 19.1977C14.2553 19.0435 14.5 18.6783 14.5 18.273V13.8372C14.5 12.8089 14.8171 11.8056 15.408 10.964L19.8943 4.57465C20.3596 3.912 19.8856 3 19.0759 3Z" fill="black">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+                                                        <!--end::Svg Icon-->
+                                                        Filtrele
+                                                    </button>
+                                                    <!--begin::Menu 1-->
+                                                    <div class="menu menu-sub menu-sub-dropdown w-300px w-md-325px" data-kt-menu="true">
+                                                        <!--begin::Header-->
+                                                        <div class="px-7 py-5">
+                                                            <div class="fs-5 text-dark fw-bolder">
+                                                                Filtreleme Seçenekleri
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Header-->
+                                                        <!--begin::Separator-->
+                                                        <div class="separator border-gray-200">
+                                                        </div>
+                                                        <!--end::Separator-->
+                                                        <!--begin::Content-->
+                                                        <div class="px-7 py-5" data-kt-user-table-filter="form">
+                                                            <!--begin::Input group-->
+                                                            <div class="mb-10">
+                                                                <label class="form-label fs-6 fw-bold">
+                                                                    Durum:
+                                                                </label>
+                                                                <select class="form-select form-select-solid fw-bolder" data-allow-clear="true" data-hide-search="true" data-kt-select2="true" data-kt-user-table-filter="role" data-placeholder="Select option">
+                                                                    <option>
+                                                                    </option>
+                                                                    <option value="Aktif">
+                                                                        Aktif
+                                                                    </option>
+                                                                    <option value="Analyst">
+                                                                        Pasif
+                                                                    </option>
+                                                                    <option value="Developer">
+                                                                        Beklemede
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <!--end::Input group-->
+                                                            <!--begin::Input group-->
+                                                            <div class="mb-10">
+                                                                <label class="form-label fs-6 fw-bold">
+                                                                    Kayıt Tarihi:
+                                                                </label>
+                                                                <select class="form-select form-select-solid fw-bolder" data-allow-clear="true" data-hide-search="true" data-kt-select2="true" data-kt-user-table-filter="two-step" data-placeholder="Select option">
+                                                                    <option>
+                                                                    </option>
+                                                                    <option value="Bugün">
+                                                                        Bugün
+                                                                    </option>
+                                                                    <option value="Bugün">
+                                                                        Bu Hafta
+                                                                    </option>
+                                                                    <option value="Bugün">
+                                                                        Bu Ay
+                                                                    </option>
+                                                                    <option value="Bugün">
+                                                                        Tümü
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <!--end::Input group-->
+                                                            <!--begin::Actions-->
+                                                            <div class="d-flex justify-content-end">
+                                                                <button class="btn btn-light btn-active-light-primary fw-bold me-2 px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="reset" type="reset">
+                                                                    Sıfırla
+                                                                </button>
+                                                                <button class="btn btn-primary fw-bold px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="filter" type="submit">
+                                                                    Uygula
+                                                                </button>
+                                                            </div>
+                                                            <!--end::Actions-->
+                                                        </div>
+                                                        <!--end::Content-->
+                                                    </div>
+                                                    <!--end::Menu 1-->
+                                                    <!--end::Filter-->
+                                                    <!--begin::Export-->
+                                                    <button class="btn btn-light-primary me-3" type="button">
+                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr078.svg-->
+                                                        <span class="svg-icon svg-icon-2">
+                                                            <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect fill="black" height="2" opacity="0.3" rx="1" transform="rotate(90 12.75 4.25)" width="12" x="12.75" y="4.25">
+                                                                </rect>
+                                                                <path d="M12.0573 6.11875L13.5203 7.87435C13.9121 8.34457 14.6232 8.37683 15.056 7.94401C15.4457 7.5543 15.4641 6.92836 15.0979 6.51643L12.4974 3.59084C12.0996 3.14332 11.4004 3.14332 11.0026 3.59084L8.40206 6.51643C8.0359 6.92836 8.0543 7.5543 8.44401 7.94401C8.87683 8.37683 9.58785 8.34458 9.9797 7.87435L11.4427 6.11875C11.6026 5.92684 11.8974 5.92684 12.0573 6.11875Z" fill="black">
+                                                                </path>
+                                                                <path d="M18.75 8.25H17.75C17.1977 8.25 16.75 8.69772 16.75 9.25C16.75 9.80228 17.1977 10.25 17.75 10.25C18.3023 10.25 18.75 10.6977 18.75 11.25V18.25C18.75 18.8023 18.3023 19.25 17.75 19.25H5.75C5.19772 19.25 4.75 18.8023 4.75 18.25V11.25C4.75 10.6977 5.19771 10.25 5.75 10.25C6.30229 10.25 6.75 9.80228 6.75 9.25C6.75 8.69772 6.30229 8.25 5.75 8.25H4.75C3.64543 8.25 2.75 9.14543 2.75 10.25V19.25C2.75 20.3546 3.64543 21.25 4.75 21.25H18.75C19.8546 21.25 20.75 20.3546 20.75 19.25V10.25C20.75 9.14543 19.8546 8.25 18.75 8.25Z" fill="#C4C4C4">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+                                                        <!--end::Svg Icon-->
+                                                        Dışarı Aktar
+                                                    </button>
+                                                    <!--end::Export-->
+                                                    <!--begin::Add user-->
+                                                    <button class="btn btn-primary" data-bs-target="#kt_modal_add_user" data-bs-toggle="modal" type="button">
+                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
+                                                        <span class="svg-icon svg-icon-2">
+                                                            <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect fill="black" height="2" opacity="0.5" rx="1" transform="rotate(-90 11.364 20.364)" width="16" x="11.364" y="20.364">
+                                                                </rect>
+                                                                <rect fill="black" height="2" rx="1" width="16" x="4.36396" y="11.364">
+                                                                </rect>
+                                                            </svg>
+                                                        </span>
+                                                        <!--end::Svg Icon-->
+                                                        Yeni Aşama Ekle
+                                                    </button>
+                                                    <!--end::Add user-->
+                                                </div>
+                                                <!--end::Toolbar-->
+                                                <!--begin::Group actions-->
+                                                <div class="d-flex justify-content-end align-items-center d-none" data-kt-user-table-toolbar="selected">
+                                                    <div class="fw-bolder me-5">
+                                                        <span class="me-2" data-kt-user-table-select="selected_count">
+                                                        </span>
+                                                        Selected
+                                                    </div>
+                                                    <button class="btn btn-danger" data-kt-user-table-select="delete_selected" type="button">
+                                                        Delete Selected
+                                                    </button>
+                                                </div>
+                                                <!--end::Group actions-->
+                                                <!--begin::Modal - Adjust Balance-->
+                                                <div aria-hidden="true" class="modal fade" id="kt_modal_export_users" tabindex="-1">
+                                                    <!--begin::Modal dialog-->
+                                                    <div class="modal-dialog modal-dialog-centered mw-650px">
+                                                        <!--begin::Modal content-->
+                                                        <div class="modal-content">
+                                                            <!--begin::Modal header-->
+                                                            <div class="modal-header">
+                                                                <!--begin::Modal title-->
+                                                                <h2 class="fw-bolder">
+                                                                    Export Users
+                                                                </h2>
+                                                                <!--end::Modal title-->
+                                                                <!--begin::Close-->
+                                                                <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-users-modal-action="close">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                                                                    <span class="svg-icon svg-icon-1">
+                                                                        <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect fill="black" height="2" opacity="0.5" rx="1" transform="rotate(-45 6 17.3137)" width="16" x="6" y="17.3137">
+                                                                            </rect>
+                                                                            <rect fill="black" height="2" rx="1" transform="rotate(45 7.41422 6)" width="16" x="7.41422" y="6">
+                                                                            </rect>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </div>
+                                                                <!--end::Close-->
+                                                            </div>
+                                                            <!--end::Modal header-->
+                                                            <!--begin::Modal body-->
+                                                            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                                                                <!--begin::Form-->
+                                                                <form action="#" class="form" id="kt_modal_export_users_form">
+                                                                    <!--begin::Input group-->
+                                                                    <div class="fv-row mb-10">
+                                                                        <!--begin::Label-->
+                                                                        <label class="fs-6 fw-bold form-label mb-2">
+                                                                            Select
+                                                                            Roles:
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                        <!--begin::Input-->
+                                                                        <select class="form-select form-select-solid fw-bolder" data-control="select2" data-hide-search="true" data-placeholder="Select a role" name="role">
+                                                                            <option>
+                                                                            </option>
+                                                                            <option value="Administrator">
+                                                                                Administrator
+                                                                            </option>
+                                                                            <option value="Analyst">
+                                                                                Analyst
+                                                                            </option>
+                                                                            <option value="Developer">
+                                                                                Developer
+                                                                            </option>
+                                                                            <option value="Support">
+                                                                                Support
+                                                                            </option>
+                                                                            <option value="Trial">
+                                                                                Trial
+                                                                            </option>
+                                                                        </select>
+                                                                        <!--end::Input-->
+                                                                    </div>
+                                                                    <!--end::Input group-->
+                                                                    <!--begin::Input group-->
+                                                                    <div class="fv-row mb-10">
+                                                                        <!--begin::Label-->
+                                                                        <label class="required fs-6 fw-bold form-label mb-2">
+                                                                            Select
+                                                                            Export Format:
+                                                                        </label>
+                                                                        <!--end::Label-->
+                                                                        <!--begin::Input-->
+                                                                        <select class="form-select form-select-solid fw-bolder" data-control="select2" data-hide-search="true" data-placeholder="Select a format" name="format">
+                                                                            <option>
+                                                                            </option>
+                                                                            <option value="excel">
+                                                                                Excel
+                                                                            </option>
+                                                                            <option value="pdf">
+                                                                                PDF
+                                                                            </option>
+                                                                            <option value="cvs">
+                                                                                CVS
+                                                                            </option>
+                                                                            <option value="zip">
+                                                                                ZIP
+                                                                            </option>
+                                                                        </select>
+                                                                        <!--end::Input-->
+                                                                    </div>
+                                                                    <!--end::Input group-->
+                                                                    <!--begin::Actions-->
+                                                                    <div class="text-center">
+                                                                        <button class="btn btn-light me-3" data-kt-users-modal-action="cancel" type="reset">
+                                                                            Discard
+                                                                        </button>
+                                                                        <button class="btn btn-primary" data-kt-users-modal-action="submit" type="submit">
+                                                                            <span class="indicator-label">
+                                                                                Submit
+                                                                            </span>
+                                                                            <span class="indicator-progress">
+                                                                                Please wait...
+                                                                                <span class="spinner-border spinner-border-sm align-middle ms-2">
+                                                                                </span>
+                                                                            </span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <!--end::Actions-->
+                                                                </form>
+                                                                <!--end::Form-->
+                                                            </div>
+                                                            <!--end::Modal body-->
+                                                        </div>
+                                                        <!--end::Modal content-->
+                                                    </div>
+                                                    <!--end::Modal dialog-->
+                                                </div>
+                                                <!--end::Modal - New Card-->
+                                                <!--begin::Modal - Add task-->
+                                                <div aria-hidden="true" class="modal fade" id="kt_modal_add_user" tabindex="-1">
+                                                    <!--begin::Modal dialog-->
+                                                    <div class="modal-dialog modal-dialog-centered mw-650px">
+                                                        <!--begin::Modal content-->
+                                                        <div class="modal-content">
+                                                            <!--begin::Modal header-->
+                                                            <div class="modal-header" id="kt_modal_add_user_header">
+                                                                <!--begin::Modal title-->
+                                                                <h2 class="fw-bolder">
+                                                                    Add User
+                                                                </h2>
+                                                                <!--end::Modal title-->
+                                                                <!--begin::Close-->
+                                                                <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-users-modal-action="close">
+                                                                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                                                                    <span class="svg-icon svg-icon-1">
+                                                                        <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect fill="black" height="2" opacity="0.5" rx="1" transform="rotate(-45 6 17.3137)" width="16" x="6" y="17.3137">
+                                                                            </rect>
+                                                                            <rect fill="black" height="2" rx="1" transform="rotate(45 7.41422 6)" width="16" x="7.41422" y="6">
+                                                                            </rect>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <!--end::Svg Icon-->
+                                                                </div>
+                                                                <!--end::Close-->
+                                                            </div>
+                                                            <!--end::Modal header-->
+                                                            <!--begin::Modal body-->
+                                                            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                                                                <!--begin::Form-->
+                                                                <form action="#" class="form" id="kt_modal_add_user_form">
+                                                                    <!--begin::Scroll-->
+                                                                    <div class="d-flex flex-column scroll-y me-n7 pe-7" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-dependencies="#kt_modal_add_user_header" data-kt-scroll-max-height="auto" data-kt-scroll-offset="300px" data-kt-scroll-wrappers="#kt_modal_add_user_scroll" id="kt_modal_add_user_scroll">
+                                                                        <!--begin::Input group-->
+                                                                        <div class="fv-row mb-7">
+                                                                            <!--begin::Label-->
+                                                                            <label class="d-block fw-bold fs-6 mb-5">
+                                                                                Avatar
+                                                                            </label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Image input-->
+                                                                            <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url('assets/media/svg/avatars/blank.svg')">
+                                                                                <!--begin::Preview existing avatar-->
+                                                                                <div class="image-input-wrapper w-125px h-125px" style="background-image: url(assets/media/avatars/300-6.jpg);">
+                                                                                </div>
+                                                                                <!--end::Preview existing avatar-->
+                                                                                <!--begin::Label-->
+                                                                                <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-bs-toggle="tooltip" data-kt-image-input-action="change" title="Change avatar">
+                                                                                    <i class="bi bi-pencil-fill fs-7">
+                                                                                    </i>
+                                                                                    <!--begin::Inputs-->
+                                                                                    <input accept=".png, .jpg, .jpeg" name="avatar" type="file" />
+                                                                                    <input name="avatar_remove" type="hidden" />
+                                                                                    <!--end::Inputs-->
+                                                                                </label>
+                                                                                <!--end::Label-->
+                                                                                <!--begin::Cancel-->
+                                                                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-bs-toggle="tooltip" data-kt-image-input-action="cancel" title="Cancel avatar">
+                                                                                    <i class="bi bi-x fs-2">
+                                                                                    </i>
+                                                                                </span>
+                                                                                <!--end::Cancel-->
+                                                                                <!--begin::Remove-->
+                                                                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-bs-toggle="tooltip" data-kt-image-input-action="remove" title="Remove avatar">
+                                                                                    <i class="bi bi-x fs-2">
+                                                                                    </i>
+                                                                                </span>
+                                                                                <!--end::Remove-->
+                                                                            </div>
+                                                                            <!--end::Image input-->
+                                                                            <!--begin::Hint-->
+                                                                            <div class="form-text">
+                                                                                Allowed file types: png, jpg,
+                                                                                jpeg.
+                                                                            </div>
+                                                                            <!--end::Hint-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="fv-row mb-7">
+                                                                            <!--begin::Label-->
+                                                                            <label class="required fw-bold fs-6 mb-2">
+                                                                                Full
+                                                                                Name
+                                                                            </label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Input-->
+                                                                            <input class="form-control form-control-solid mb-3 mb-lg-0" name="user_name" placeholder="Full name" type="text" value="Emma Smith" />
+                                                                            <!--end::Input-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="fv-row mb-7">
+                                                                            <!--begin::Label-->
+                                                                            <label class="required fw-bold fs-6 mb-2">
+                                                                                Email
+                                                                            </label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Input-->
+                                                                            <input class="form-control form-control-solid mb-3 mb-lg-0" name="user_email" placeholder="example@domain.com" type="email" value="e.smith@kpmg.com.au" />
+                                                                            <!--end::Input-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                        <!--begin::Input group-->
+                                                                        <div class="mb-7">
+                                                                            <!--begin::Label-->
+                                                                            <label class="required fw-bold fs-6 mb-5">
+                                                                                Role
+                                                                            </label>
+                                                                            <!--end::Label-->
+                                                                            <!--begin::Roles-->
+                                                                            <!--begin::Input row-->
+                                                                            <div class="d-flex fv-row">
+                                                                                <!--begin::Radio-->
+                                                                                <div class="form-check form-check-custom form-check-solid">
+                                                                                    <!--begin::Input-->
+                                                                                    <input checked="checked" class="form-check-input me-3" id="kt_modal_update_role_option_0" name="user_role" type="radio" value="0" />
+                                                                                    <!--end::Input-->
+                                                                                    <!--begin::Label-->
+                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_0">
+                                                                                        <div class="fw-bolder text-gray-800">
+                                                                                            Administrator
+                                                                                        </div>
+                                                                                        <div class="text-gray-600">
+                                                                                            Best for
+                                                                                            business owners and company
+                                                                                            administrators
+                                                                                        </div>
+                                                                                    </label>
+                                                                                    <!--end::Label-->
+                                                                                </div>
+                                                                                <!--end::Radio-->
+                                                                            </div>
+                                                                            <!--end::Input row-->
+                                                                            <div class="separator separator-dashed my-5">
+                                                                            </div>
+                                                                            <!--begin::Input row-->
+                                                                            <div class="d-flex fv-row">
+                                                                                <!--begin::Radio-->
+                                                                                <div class="form-check form-check-custom form-check-solid">
+                                                                                    <!--begin::Input-->
+                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_1" name="user_role" type="radio" value="1" />
+                                                                                    <!--end::Input-->
+                                                                                    <!--begin::Label-->
+                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_1">
+                                                                                        <div class="fw-bolder text-gray-800">
+                                                                                            Developer
+                                                                                        </div>
+                                                                                        <div class="text-gray-600">
+                                                                                            Best for
+                                                                                            developers or people primarily using
+                                                                                            the API
+                                                                                        </div>
+                                                                                    </label>
+                                                                                    <!--end::Label-->
+                                                                                </div>
+                                                                                <!--end::Radio-->
+                                                                            </div>
+                                                                            <!--end::Input row-->
+                                                                            <div class="separator separator-dashed my-5">
+                                                                            </div>
+                                                                            <!--begin::Input row-->
+                                                                            <div class="d-flex fv-row">
+                                                                                <!--begin::Radio-->
+                                                                                <div class="form-check form-check-custom form-check-solid">
+                                                                                    <!--begin::Input-->
+                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_2" name="user_role" type="radio" value="2" />
+                                                                                    <!--end::Input-->
+                                                                                    <!--begin::Label-->
+                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_2">
+                                                                                        <div class="fw-bolder text-gray-800">
+                                                                                            Analyst
+                                                                                        </div>
+                                                                                        <div class="text-gray-600">
+                                                                                            Best for
+                                                                                            people who need full access to
+                                                                                            analytics data, but don't need to
+                                                                                            update business settings
+                                                                                        </div>
+                                                                                    </label>
+                                                                                    <!--end::Label-->
+                                                                                </div>
+                                                                                <!--end::Radio-->
+                                                                            </div>
+                                                                            <!--end::Input row-->
+                                                                            <div class="separator separator-dashed my-5">
+                                                                            </div>
+                                                                            <!--begin::Input row-->
+                                                                            <div class="d-flex fv-row">
+                                                                                <!--begin::Radio-->
+                                                                                <div class="form-check form-check-custom form-check-solid">
+                                                                                    <!--begin::Input-->
+                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_3" name="user_role" type="radio" value="3" />
+                                                                                    <!--end::Input-->
+                                                                                    <!--begin::Label-->
+                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_3">
+                                                                                        <div class="fw-bolder text-gray-800">
+                                                                                            Support
+                                                                                        </div>
+                                                                                        <div class="text-gray-600">
+                                                                                            Best for
+                                                                                            employees who regularly refund
+                                                                                            payments and respond to disputes
+                                                                                        </div>
+                                                                                    </label>
+                                                                                    <!--end::Label-->
+                                                                                </div>
+                                                                                <!--end::Radio-->
+                                                                            </div>
+                                                                            <!--end::Input row-->
+                                                                            <div class="separator separator-dashed my-5">
+                                                                            </div>
+                                                                            <!--begin::Input row-->
+                                                                            <div class="d-flex fv-row">
+                                                                                <!--begin::Radio-->
+                                                                                <div class="form-check form-check-custom form-check-solid">
+                                                                                    <!--begin::Input-->
+                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_4" name="user_role" type="radio" value="4" />
+                                                                                    <!--end::Input-->
+                                                                                    <!--begin::Label-->
+                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_4">
+                                                                                        <div class="fw-bolder text-gray-800">
+                                                                                            Trial
+                                                                                        </div>
+                                                                                        <div class="text-gray-600">
+                                                                                            Best for
+                                                                                            people who need to preview content
+                                                                                            data, but don't need to make any
+                                                                                            updates
+                                                                                        </div>
+                                                                                    </label>
+                                                                                    <!--end::Label-->
+                                                                                </div>
+                                                                                <!--end::Radio-->
+                                                                            </div>
+                                                                            <!--end::Input row-->
+                                                                            <!--end::Roles-->
+                                                                        </div>
+                                                                        <!--end::Input group-->
+                                                                    </div>
+                                                                    <!--end::Scroll-->
+                                                                    <!--begin::Actions-->
+                                                                    <div class="text-center pt-15">
+                                                                        <button class="btn btn-light me-3" data-kt-users-modal-action="cancel" type="reset">
+                                                                            Discard
+                                                                        </button>
+                                                                        <button class="btn btn-primary" data-kt-users-modal-action="submit" type="submit">
+                                                                            <span class="indicator-label">
+                                                                                Submit
+                                                                            </span>
+                                                                            <span class="indicator-progress">
+                                                                                Please wait...
+                                                                                <span class="spinner-border spinner-border-sm align-middle ms-2">
+                                                                                </span>
+                                                                            </span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <!--end::Actions-->
+                                                                </form>
+                                                                <!--end::Form-->
+                                                            </div>
+                                                            <!--end::Modal body-->
+                                                        </div>
+                                                        <!--end::Modal content-->
+                                                    </div>
+                                                    <!--end::Modal dialog-->
+                                                </div>
+                                                <!--end::Modal - Add task-->
+                                            </div>
+                                            <!--end::Card toolbar-->
+                                        </div>
+                                        <!--end::Card header-->
+                                    </div>
+                                </div>
                                 <div class="col-md-6 col-xl-4">
                                     <!--begin::Card-->
                                     <a href="#" class="card border-hover-primary">
@@ -294,6 +836,68 @@
                                                     <span class="symbol-label bg-warning text-inverse-warning fw-bolder">S</span>
                                                 </div>
                                                 <!--begin::User-->
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
+                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-plus text-white fs-2"></i></span>
+                                                </div>
+                                                <!--begin::User-->
+                                            </div>
+                                            <!--end::Users-->
+                                        </div>
+                                        <!--end:: Card body-->
+                                    </a>
+                                    <!--end::Card-->
+                                </div>
+                                  <div class="col-md-6 col-xl-4">
+                                    <!--begin::Card-->
+                                    <a href="#" class="card border-hover-primary">
+                                        <!--begin::Card header-->
+                                        <div class="card-header border-0 pt-9">
+                                            <!--begin::Card Title-->
+                                            <div class="card-title m-0">
+                                                <!--begin::Avatar-->
+                                                <div class="fs-3 fw-bolder text-dark">2. Aşama</div>
+                                                <!--end::Avatar-->
+                                            </div>
+                                            <!--end::Car Title-->
+                                            <!--begin::Card toolbar-->
+                                            <div class="card-toolbar">
+                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-pen fs-2"></i> Düzenle</button>
+                                            </div>
+                                            <!--end::Card toolbar-->
+                                        </div>
+                                        <!--end:: Card header-->
+                                        <!--begin:: Card body-->
+                                        <div class="card-body p-9">
+                                            <!--begin::Name-->
+                                            <!--end::Name-->
+                                            <!--begin::Description-->
+                                            <p class="text-gray-400 fw-bold fs-5 mt-1 mb-7">Başvurunun Değerlendirilmesi ve Belgelerin Kontrol Edilmesi</p>
+                                            <!--end::Description-->
+                                            <!--begin::Info-->
+                                            <div class="d-flex flex-wrap mb-5">
+                                                <!--begin::Due-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-7 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">8 Görev</div>
+                                                    <div class="fw-bold text-gray-400">Aşamanın Görevleri</div>
+                                                </div>
+                                                <!--end::Due-->
+                                                <!--begin::Budget-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">567 adet</div>
+                                                    <div class="fw-bold text-gray-400">Bekleyen Başvurular</div>
+                                                </div>
+                                                <!--end::Budget-->
+                                            </div>
+                                            <!--end::Info-->
+                                            <!--begin::Users-->
+                                            <div class="symbol-group symbol-hover">
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Emma Smith">
+                                                    <img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+                                                </div>
+                                                <!--begin::User-->
+                                                
                                                 <!--begin::User-->
                                                 <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
                                                     <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-plus text-white fs-2"></i></span>
@@ -2628,651 +3232,6 @@
     <!--end::Drawers-->
     <!--end::Main-->
     <!--begin::Engage drawers-->
-    <!--begin::Demos drawer-->
-    <div id="kt_engage_demos" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="explore" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'lg': '475px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_engage_demos_toggle" data-kt-drawer-close="#kt_engage_demos_close">
-        <!--begin::Card-->
-        <div class="card shadow-none rounded-0 w-100">
-            <!--begin::Header-->
-            <div class="card-header" id="kt_engage_demos_header">
-                <h3 class="card-title fw-bolder text-gray-700">Explore</h3>
-                <div class="card-toolbar">
-                    <button type="button" class="btn btn-sm btn-icon btn-active-color-primary h-40px w-40px me-n6" id="kt_engage_demos_close">
-                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                        <span class="svg-icon svg-icon-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-                                <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-                            </svg>
-                        </span>
-                        <!--end::Svg Icon-->
-                    </button>
-                </div>
-            </div>
-            <!--end::Header-->
-            <!--begin::Body-->
-            <div class="card-body" id="kt_engage_demos_body">
-                <!--begin::Content-->
-                <div id="kt_explore_scroll" class="scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_engage_demos_body" data-kt-scroll-dependencies="#kt_engage_demos_header" data-kt-scroll-offset="5px">
-                    <!--begin::Wrapper-->
-                    <div class="mb-0">
-                        <!--begin::Heading-->
-                        <div class="mb-7">
-                            <div class="d-flex flex-stack">
-                                <h3 class="mb-0">Metronic Licenses</h3>
-                                <a href="https://themeforest.net/licenses/standard" class="fw-bold" target="_blank">License FAQs</a>
-                            </div>
-                        </div>
-                        <!--end::Heading-->
-                        <!--begin::License-->
-                        <div class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5">
-                            <div class="d-flex flex-stack">
-                                <div class="d-flex flex-column">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">Regular License</div>
-                                        <i class="text-gray-400 fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="popover" data-bs-custom-class="popover-dark" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Use, by you or one client in a single end product which end users are not charged for"></i>
-                                    </div>
-                                    <div class="fs-7 text-muted">For single end product used by you or one client</div>
-                                </div>
-                                <div class="text-nowrap">
-                                    <span class="text-muted fs-7 fw-bold me-n1">$</span>
-                                    <span class="text-dark fs-1 fw-bolder">39</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::License-->
-                        <!--begin::License-->
-                        <div class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5">
-                            <div class="d-flex flex-stack">
-                                <div class="d-flex flex-column">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">Extended License</div>
-                                        <i class="text-gray-400 fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="popover" data-bs-custom-class="popover-dark" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Use, by you or one client, in a single end product which end users can be charged for."></i>
-                                    </div>
-                                    <div class="fs-7 text-muted">For single SaaS app with paying users</div>
-                                </div>
-                                <div class="text-nowrap">
-                                    <span class="text-muted fs-7 fw-bold me-n1">$</span>
-                                    <span class="text-dark fs-1 fw-bolder">939</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::License-->
-                        <!--begin::License-->
-                        <div class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5">
-                            <div class="d-flex flex-stack">
-                                <div class="d-flex flex-column">
-                                    <div class="d-flex align-items-center mb-1">
-                                        <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">Custom License</div>
-                                    </div>
-                                    <div class="fs-7 text-muted">Reach us for custom license offers.</div>
-                                </div>
-                                <div class="text-nowrap">
-                                    <a href="https://keenthemes.com/contact/" class="btn btn-sm btn-success" target="_blank">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end::License-->
-                        <!--begin::Purchase-->
-                        <a href="https://1.envato.market/EA4JP" class="btn btn-primary mb-15 w-100">Buy Now</a>
-                        <!--end::Purchase-->
-                        <!--begin::Demos-->
-                        <div class="mb-0">
-                            <h3 class="fw-bolder text-center mb-6">Metronic Demos</h3>
-                            <!--begin::Row-->
-                            <div class="row g-5">
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo1.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo1" class="btn btn-sm btn-success shadow">Demo 1</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo2.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo2" class="btn btn-sm btn-success shadow">Demo 2</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo3.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo3" class="btn btn-sm btn-success shadow">Demo 3</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo4.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo4" class="btn btn-sm btn-success shadow">Demo 4</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo5.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo5" class="btn btn-sm btn-success shadow">Demo 5</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo6.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo6" class="btn btn-sm btn-success shadow">Demo 6</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo7.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo7" class="btn btn-sm btn-success shadow">Demo 7</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-success rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo8.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo8" class="btn btn-sm btn-success shadow">Demo 8</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo9.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo9" class="btn btn-sm btn-success shadow">Demo 9</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo10.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo10" class="btn btn-sm btn-success shadow">Demo 10</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo11.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo11" class="btn btn-sm btn-success shadow">Demo 11</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo12.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo12" class="btn btn-sm btn-success shadow">Demo 12</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo13.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo13" class="btn btn-sm btn-success shadow">Demo 13</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo14.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo14" class="btn btn-sm btn-success shadow">Demo 14</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo15.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo15" class="btn btn-sm btn-success shadow">Demo 15</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo16.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo16" class="btn btn-sm btn-success shadow">Demo 16</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo17.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo17" class="btn btn-sm btn-success shadow">Demo 17</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo18.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo18" class="btn btn-sm btn-success shadow">Demo 18</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo19.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo19" class="btn btn-sm btn-success shadow">Demo 19</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo20.png" alt="demo" class="w-100" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <a href="https://preview.keenthemes.com/metronic8/demo20" class="btn btn-sm btn-success shadow">Demo 20</a>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo21.png" alt="demo" class="w-100 opacity-25" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo22.png" alt="demo" class="w-100 opacity-25" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo23.png" alt="demo" class="w-100 opacity-25" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                                <!--begin::Col-->
-                                <div class="col-6">
-                                    <!--begin::Demo-->
-                                    <div class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded">
-                                        <div class="overlay-wrapper">
-                                            <img src="assets/media/demos/demo24.png" alt="demo" class="w-100 opacity-25" />
-                                        </div>
-                                        <div class="overlay-layer bg-dark bg-opacity-10">
-                                            <div class="badge badge-white px-6 py-4 fw-bold fs-base shadow">Coming soon</div>
-                                        </div>
-                                    </div>
-                                    <!--end::Demo-->
-                                </div>
-                                <!--end::Col-->
-                            </div>
-                            <!--end::Row-->
-                        </div>
-                        <!--end::Demos-->
-                    </div>
-                    <!--end::Wrapper-->
-                </div>
-                <!--end::Content-->
-            </div>
-            <!--end::Body-->
-        </div>
-        <!--end::Card-->
-    </div>
-    <!--end::Demos drawer-->
-    <!--begin::Help drawer-->
-    <div id="kt_help" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="help" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'md': '525px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_help_toggle" data-kt-drawer-close="#kt_help_close">
-        <!--begin::Card-->
-        <div class="card shadow-none rounded-0 w-100">
-            <!--begin::Header-->
-            <div class="card-header" id="kt_help_header">
-                <h5 class="card-title fw-bold text-gray-600">Learn &amp; Get Inspired</h5>
-                <div class="card-toolbar">
-                    <button type="button" class="btn btn-sm btn-icon explore-btn-dismiss me-n5" id="kt_help_close">
-                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                        <span class="svg-icon svg-icon-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-                                <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
-                            </svg>
-                        </span>
-                        <!--end::Svg Icon-->
-                    </button>
-                </div>
-            </div>
-            <!--end::Header-->
-            <!--begin::Body-->
-            <div class="card-body" id="kt_help_body">
-                <!--begin::Content-->
-                <div id="kt_help_scroll" class="hover-scroll-overlay-y" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_help_body" data-kt-scroll-dependencies="#kt_help_header" data-kt-scroll-offset="5px">
-                    <!--begin::Support-->
-                    <div class="rounded border border-dashed border-gray-300 p-6 p-lg-8 mb-10">
-                        <!--begin::Heading-->
-                        <h2 class="fw-bolder mb-5">Support at
-                            <a href="https://devs.keenthemes.com" class="">devs.keenthemes.com</a></h2>
-                        <!--end::Heading-->
-                        <!--begin::Description-->
-                        <div class="fs-5 fw-bold mb-5">
-                            <span class="text-gray-500">Join our developers community to find answer to your question and help others.</span>
-                            <a class="explore-link d-none" href="https://keenthemes.com/licensing">FAQs</a>
-                        </div>
-                        <!--end::Description-->
-                        <!--begin::Link-->
-                        <a href="https://devs.keenthemes.com" class="btn btn-lg explore-btn-primary w-100">Get Support</a>
-                        <!--end::Link-->
-                    </div>
-                    <!--end::Support-->
-                    <!--begin::Link-->
-                    <div class="d-flex align-items-center mb-7">
-                        <!--begin::Icon-->
-                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-warning">
-                            <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
-                            <span class="svg-icon svg-icon-warning svg-icon-2x svg-icon-lg-3x">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black" />
-                                    <path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Icon-->
-                        <!--begin::Info-->
-                        <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
-                            <!--begin::Wrapper-->
-                            <div class="d-flex flex-column me-2 me-lg-5">
-                                <!--begin::Title-->
-                                <a href="../../demo8/dist/documentation/getting-started.html" class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1">Documentation &amp; Videos</a>
-                                <!--end::Title-->
-                                <!--begin::Description-->
-                                <div class="text-muted fw-bold fs-7 fs-lg-6">From guides and video tutorials, to live demos and code examples to get started.</div>
-                                <!--end::Description-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                            <span class="svg-icon svg-icon-gray-400 svg-icon-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
-                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Info-->
-                    </div>
-                    <!--end::Link-->
-                    <!--begin::Link-->
-                    <div class="d-flex align-items-center mb-7">
-                        <!--begin::Icon-->
-                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-primary">
-                            <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
-                            <span class="svg-icon svg-icon-primary svg-icon-2x svg-icon-lg-3x">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M21 9V11C21 11.6 20.6 12 20 12H14V8H20C20.6 8 21 8.4 21 9ZM10 8H4C3.4 8 3 8.4 3 9V11C3 11.6 3.4 12 4 12H10V8Z" fill="black" />
-                                    <path d="M15 2C13.3 2 12 3.3 12 5V8H15C16.7 8 18 6.7 18 5C18 3.3 16.7 2 15 2Z" fill="black" />
-                                    <path opacity="0.3" d="M9 2C10.7 2 12 3.3 12 5V8H9C7.3 8 6 6.7 6 5C6 3.3 7.3 2 9 2ZM4 12V21C4 21.6 4.4 22 5 22H10V12H4ZM20 12V21C20 21.6 19.6 22 19 22H14V12H20Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Icon-->
-                        <!--begin::Info-->
-                        <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
-                            <!--begin::Wrapper-->
-                            <div class="d-flex flex-column me-2 me-lg-5">
-                                <!--begin::Title-->
-                                <a href="../../demo8/dist/documentation/base/utilities.html" class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1">Plugins &amp; Components</a>
-                                <!--end::Title-->
-                                <!--begin::Description-->
-                                <div class="text-muted fw-bold fs-7 fs-lg-6">Check out our 300+ in-house components and customized 3rd-party plugins.</div>
-                                <!--end::Description-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                            <span class="svg-icon svg-icon-gray-400 svg-icon-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
-                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Info-->
-                    </div>
-                    <!--end::Link-->
-                    <!--begin::Link-->
-                    <div class="d-flex align-items-center mb-7">
-                        <!--begin::Icon-->
-                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-info">
-                            <!--begin::Svg Icon | path: icons/duotune/art/art006.svg-->
-                            <span class="svg-icon svg-icon-info svg-icon-2x svg-icon-lg-3x">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path opacity="0.3" d="M22 19V17C22 16.4 21.6 16 21 16H8V3C8 2.4 7.6 2 7 2H5C4.4 2 4 2.4 4 3V19C4 19.6 4.4 20 5 20H21C21.6 20 22 19.6 22 19Z" fill="black" />
-                                    <path d="M20 5V21C20 21.6 19.6 22 19 22H17C16.4 22 16 21.6 16 21V8H8V4H19C19.6 4 20 4.4 20 5ZM3 8H4V4H3C2.4 4 2 4.4 2 5V7C2 7.6 2.4 8 3 8Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Icon-->
-                        <!--begin::Info-->
-                        <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
-                            <!--begin::Wrapper-->
-                            <div class="d-flex flex-column me-2 me-lg-5">
-                                <!--begin::Title-->
-                                <a href="https://preview.keenthemes.com/metronic8/demo8/layout-builder.html" class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1">Layout Builder</a>
-                                <!--end::Title-->
-                                <!--begin::Description-->
-                                <div class="text-muted fw-bold fs-7 fs-lg-6">Build your layout, preview it and export the HTML for server side integration.</div>
-                                <!--end::Description-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                            <span class="svg-icon svg-icon-gray-400 svg-icon-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
-                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Info-->
-                    </div>
-                    <!--end::Link-->
-                    <!--begin::Link-->
-                    <div class="d-flex align-items-center mb-7">
-                        <!--begin::Icon-->
-                        <div class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-danger">
-                            <!--begin::Svg Icon | path: icons/duotune/electronics/elc009.svg-->
-                            <span class="svg-icon svg-icon-danger svg-icon-2x svg-icon-lg-3x">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M13 9V8C13 7.4 13.4 7 14 7H15C16.7 7 18 5.7 18 4V3C18 2.4 17.6 2 17 2C16.4 2 16 2.4 16 3V4C16 4.6 15.6 5 15 5H14C12.3 5 11 6.3 11 8V9H13Z" fill="black" />
-                                    <path opacity="0.3" d="M21 22H3C2.4 22 2 21.6 2 21V10C2 9.4 2.4 9 3 9H21C21.6 9 22 9.4 22 10V21C22 21.6 21.6 22 21 22ZM5 12C4.4 12 4 12.4 4 13C4 13.6 4.4 14 5 14C5.6 14 6 13.6 6 13C6 12.4 5.6 12 5 12ZM8 12C7.4 12 7 12.4 7 13C7 13.6 7.4 14 8 14C8.6 14 9 13.6 9 13C9 12.4 8.6 12 8 12ZM11 12C10.4 12 10 12.4 10 13C10 13.6 10.4 14 11 14C11.6 14 12 13.6 12 13C12 12.4 11.6 12 11 12ZM14 12C13.4 12 13 12.4 13 13C13 13.6 13.4 14 14 14C14.6 14 15 13.6 15 13C15 12.4 14.6 12 14 12ZM9 15C8.4 15 8 15.4 8 16C8 16.6 8.4 17 9 17C9.6 17 10 16.6 10 16C10 15.4 9.6 15 9 15ZM12 15C11.4 15 11 15.4 11 16C11 16.6 11.4 17 12 17C12.6 17 13 16.6 13 16C13 15.4 12.6 15 12 15ZM15 15C14.4 15 14 15.4 14 16C14 16.6 14.4 17 15 17C15.6 17 16 16.6 16 16C16 15.4 15.6 15 15 15ZM19 18C18.4 18 18 18.4 18 19C18 19.6 18.4 20 19 20C19.6 20 20 19.6 20 19C20 18.4 19.6 18 19 18ZM7 19C7 18.4 6.6 18 6 18H5C4.4 18 4 18.4 4 19C4 19.6 4.4 20 5 20H6C6.6 20 7 19.6 7 19ZM7 16C7 15.4 6.6 15 6 15H5C4.4 15 4 15.4 4 16C4 16.6 4.4 17 5 17H6C6.6 17 7 16.6 7 16ZM17 14H19C19.6 14 20 13.6 20 13C20 12.4 19.6 12 19 12H17C16.4 12 16 12.4 16 13C16 13.6 16.4 14 17 14ZM18 17H19C19.6 17 20 16.6 20 16C20 15.4 19.6 15 19 15H18C17.4 15 17 15.4 17 16C17 16.6 17.4 17 18 17ZM17 19C17 18.4 16.6 18 16 18H9C8.4 18 8 18.4 8 19C8 19.6 8.4 20 9 20H16C16.6 20 17 19.6 17 19Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Icon-->
-                        <!--begin::Info-->
-                        <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
-                            <!--begin::Wrapper-->
-                            <div class="d-flex flex-column me-2 me-lg-5">
-                                <!--begin::Title-->
-                                <a href="../../demo8/dist/documentation/getting-started/changelog.html" class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1">What's New</a>
-                                <!--end::Title-->
-                                <!--begin::Description-->
-                                <div class="text-muted fw-bold fs-7 fs-lg-6">Latest features and improvements added with our users feedback in mind.</div>
-                                <!--end::Description-->
-                            </div>
-                            <!--end::Wrapper-->
-                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
-                            <span class="svg-icon svg-icon-gray-400 svg-icon-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
-                                    <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
-                                </svg>
-                            </span>
-                            <!--end::Svg Icon-->
-                        </div>
-                        <!--end::Info-->
-                    </div>
-                    <!--end::Link-->
-                </div>
-                <!--end::Content-->
-            </div>
-            <!--end::Body-->
-        </div>
-        <!--end::Card-->
-    </div>
-    <!--end::Help drawer-->
     <!--end::Engage drawers-->
     <!--begin::Engage toolbar-->
     <div class="engage-toolbar d-flex position-fixed px-5 fw-bolder zindex-2 top-50 end-0 transform-90 mt-20 gap-2">
