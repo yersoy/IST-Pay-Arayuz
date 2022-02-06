@@ -203,7 +203,6 @@
                                 <!--begin::Title-->
                                 <h1 class="d-flex flex-column text-dark fw-bolder fs-3 mb-0">Başvuru Aşamaları</h1>
                                 <!--end::Title-->
-                                
                             </div>
                             <!--end::Page title-->
                             <!--begin::Action group-->
@@ -477,14 +476,14 @@
                                                                     <!--begin::Actions-->
                                                                     <div class="text-center">
                                                                         <button class="btn btn-light me-3" data-kt-users-modal-action="cancel" type="reset">
-                                                                            Discard
+                                                                            İptal Et
                                                                         </button>
                                                                         <button class="btn btn-primary" data-kt-users-modal-action="submit" type="submit">
                                                                             <span class="indicator-label">
-                                                                                Submit
+                                                                                Tamamla
                                                                             </span>
                                                                             <span class="indicator-progress">
-                                                                                Please wait...
+                                                                                Lütfen Bekleyin...
                                                                                 <span class="spinner-border spinner-border-sm align-middle ms-2">
                                                                                 </span>
                                                                             </span>
@@ -511,7 +510,7 @@
                                                             <div class="modal-header" id="kt_modal_add_user_header">
                                                                 <!--begin::Modal title-->
                                                                 <h2 class="fw-bolder">
-                                                                    Add User
+                                                                    Yeni Aşama Ekle
                                                                 </h2>
                                                                 <!--end::Modal title-->
                                                                 <!--begin::Close-->
@@ -539,58 +538,12 @@
                                                                         <!--begin::Input group-->
                                                                         <div class="fv-row mb-7">
                                                                             <!--begin::Label-->
-                                                                            <label class="d-block fw-bold fs-6 mb-5">
-                                                                                Avatar
-                                                                            </label>
-                                                                            <!--end::Label-->
-                                                                            <!--begin::Image input-->
-                                                                            <div class="image-input image-input-outline" data-kt-image-input="true" style="background-image: url('assets/media/svg/avatars/blank.svg')">
-                                                                                <!--begin::Preview existing avatar-->
-                                                                                <div class="image-input-wrapper w-125px h-125px" style="background-image: url(assets/media/avatars/300-6.jpg);">
-                                                                                </div>
-                                                                                <!--end::Preview existing avatar-->
-                                                                                <!--begin::Label-->
-                                                                                <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-bs-toggle="tooltip" data-kt-image-input-action="change" title="Change avatar">
-                                                                                    <i class="bi bi-pencil-fill fs-7">
-                                                                                    </i>
-                                                                                    <!--begin::Inputs-->
-                                                                                    <input accept=".png, .jpg, .jpeg" name="avatar" type="file" />
-                                                                                    <input name="avatar_remove" type="hidden" />
-                                                                                    <!--end::Inputs-->
-                                                                                </label>
-                                                                                <!--end::Label-->
-                                                                                <!--begin::Cancel-->
-                                                                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-bs-toggle="tooltip" data-kt-image-input-action="cancel" title="Cancel avatar">
-                                                                                    <i class="bi bi-x fs-2">
-                                                                                    </i>
-                                                                                </span>
-                                                                                <!--end::Cancel-->
-                                                                                <!--begin::Remove-->
-                                                                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-bs-toggle="tooltip" data-kt-image-input-action="remove" title="Remove avatar">
-                                                                                    <i class="bi bi-x fs-2">
-                                                                                    </i>
-                                                                                </span>
-                                                                                <!--end::Remove-->
-                                                                            </div>
-                                                                            <!--end::Image input-->
-                                                                            <!--begin::Hint-->
-                                                                            <div class="form-text">
-                                                                                Allowed file types: png, jpg,
-                                                                                jpeg.
-                                                                            </div>
-                                                                            <!--end::Hint-->
-                                                                        </div>
-                                                                        <!--end::Input group-->
-                                                                        <!--begin::Input group-->
-                                                                        <div class="fv-row mb-7">
-                                                                            <!--begin::Label-->
-                                                                            <label class="required fw-bold fs-6 mb-2">
-                                                                                Full
-                                                                                Name
+                                                                            <label class=" fw-bold fs-6 mb-2">
+                                                                                Aşamanın Adı
                                                                             </label>
                                                                             <!--end::Label-->
                                                                             <!--begin::Input-->
-                                                                            <input class="form-control form-control-solid mb-3 mb-lg-0" name="user_name" placeholder="Full name" type="text" value="Emma Smith" />
+                                                                            <input class="form-control form-control-solid mb-3 mb-lg-0" name="user_name" disabled placeholder="Full name" type="text" value="6. Aşama" />
                                                                             <!--end::Input-->
                                                                         </div>
                                                                         <!--end::Input group-->
@@ -598,163 +551,128 @@
                                                                         <div class="fv-row mb-7">
                                                                             <!--begin::Label-->
                                                                             <label class="required fw-bold fs-6 mb-2">
-                                                                                Email
+                                                                                İlgili Kişiler & Departmanlar
                                                                             </label>
-                                                                            <!--end::Label-->
-                                                                            <!--begin::Input-->
-                                                                            <input class="form-control form-control-solid mb-3 mb-lg-0" name="user_email" placeholder="example@domain.com" type="email" value="e.smith@kpmg.com.au" />
-                                                                            <!--end::Input-->
                                                                         </div>
                                                                         <!--end::Input group-->
                                                                         <!--begin::Input group-->
-                                                                        <div class="mb-7">
-                                                                            <!--begin::Label-->
-                                                                            <label class="required fw-bold fs-6 mb-5">
-                                                                                Role
-                                                                            </label>
-                                                                            <!--end::Label-->
-                                                                            <!--begin::Roles-->
-                                                                            <!--begin::Input row-->
-                                                                            <div class="d-flex fv-row">
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <!--begin::Input-->
-                                                                                    <input checked="checked" class="form-check-input me-3" id="kt_modal_update_role_option_0" name="user_role" type="radio" value="0" />
-                                                                                    <!--end::Input-->
-                                                                                    <!--begin::Label-->
-                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_0">
-                                                                                        <div class="fw-bolder text-gray-800">
-                                                                                            Administrator
-                                                                                        </div>
-                                                                                        <div class="text-gray-600">
-                                                                                            Best for
-                                                                                            business owners and company
-                                                                                            administrators
-                                                                                        </div>
+                                                                        <div class="mh-375px scroll-y me-n7 pe-7">
+                                                                            <!--begin::User-->
+                                                                            <div class="rounded d-flex flex-stack bg-active-lighten p-4" data-user-id="0">
+                                                                                <!--begin::Details-->
+                                                                                <div class="d-flex align-items-center">
+                                                                                    <!--begin::Checkbox-->
+                                                                                    <label class="form-check form-check-custom form-check-solid me-5">
+                                                                                        <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='0']" value="0" />
                                                                                     </label>
-                                                                                    <!--end::Label-->
+                                                                                    <!--end::Checkbox-->
+                                                                                    <!--begin::Avatar-->
+                                                                                    <div class="symbol symbol-35px symbol-circle">
+                                                                                        <img alt="Pic" src="assets/sunuvar.jpg" />
+                                                                                    </div>
+                                                                                    <!--end::Avatar-->
+                                                                                    <!--begin::Details-->
+                                                                                    <div class="ms-5">
+                                                                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Selim Ünüvar</a>
+                                                                                        <div class="fw-bold text-muted">esunuvar@ritma.com.tr</div>
+                                                                                    </div>
+                                                                                    <!--end::Details-->
                                                                                 </div>
-                                                                                <!--end::Radio-->
+                                                                                <!--end::Details-->
+                                                                                <!--begin::Access menu-->
+                                                                                <div class="ms-2 w-150px">
+                                                                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
+                                                                                        <option value="1">Görüntüleme</option>
+                                                                                        <option value="2" selected="selected">Tüm Yetkiler</option>
+                                                                                        <option value="3">Gör. ve Ekleme</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <!--end::Access menu-->
                                                                             </div>
-                                                                            <!--end::Input row-->
-                                                                            <div class="separator separator-dashed my-5">
-                                                                            </div>
-                                                                            <!--begin::Input row-->
-                                                                            <div class="d-flex fv-row">
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <!--begin::Input-->
-                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_1" name="user_role" type="radio" value="1" />
-                                                                                    <!--end::Input-->
-                                                                                    <!--begin::Label-->
-                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_1">
-                                                                                        <div class="fw-bolder text-gray-800">
-                                                                                            Developer
-                                                                                        </div>
-                                                                                        <div class="text-gray-600">
-                                                                                            Best for
-                                                                                            developers or people primarily using
-                                                                                            the API
-                                                                                        </div>
+                                                                            <!--end::User-->
+                                                                            <!--begin::Separator-->
+                                                                            <div class="border-bottom border-gray-300 border-bottom-dashed"></div>
+                                                                            <!--end::Separator-->
+                                                                            <!--begin::User-->
+                                                                            <div class="rounded d-flex flex-stack bg-active-lighten p-4" data-user-id="0">
+                                                                                <!--begin::Details-->
+                                                                                <div class="d-flex align-items-center">
+                                                                                    <!--begin::Checkbox-->
+                                                                                    <label class="form-check form-check-custom form-check-solid me-5">
+                                                                                        <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='2']" value="0" />
                                                                                     </label>
-                                                                                    <!--end::Label-->
+                                                                                    <!--end::Checkbox-->
+                                                                                    <!--begin::Avatar-->
+                                                                                    <div class="symbol symbol-35px symbol-circle">
+                                                                                        <img alt="Pic" src="assets/yersoy.jpg" />
+                                                                                    </div>
+                                                                                    <!--end::Avatar-->
+                                                                                    <!--begin::Details-->
+                                                                                    <div class="ms-5">
+                                                                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2">Yusuf Ersoy</a>
+                                                                                        <div class="fw-bold text-muted">yersoy@ritma.com.tr</div>
+                                                                                    </div>
+                                                                                    <!--end::Details-->
                                                                                 </div>
-                                                                                <!--end::Radio-->
+                                                                                <!--end::Details-->
+                                                                                <!--begin::Access menu-->
+                                                                                <div class="ms-2 w-150px">
+                                                                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
+                                                                                        <option value="1">Görüntüleme</option>
+                                                                                        <option value="2" selected="selected">Tüm Yetkiler</option>
+                                                                                        <option value="3">Gör. ve Ekleme</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <!--end::Access menu-->
                                                                             </div>
-                                                                            <!--end::Input row-->
-                                                                            <div class="separator separator-dashed my-5">
-                                                                            </div>
-                                                                            <!--begin::Input row-->
-                                                                            <div class="d-flex fv-row">
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <!--begin::Input-->
-                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_2" name="user_role" type="radio" value="2" />
-                                                                                    <!--end::Input-->
-                                                                                    <!--begin::Label-->
-                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_2">
-                                                                                        <div class="fw-bolder text-gray-800">
-                                                                                            Analyst
-                                                                                        </div>
-                                                                                        <div class="text-gray-600">
-                                                                                            Best for
-                                                                                            people who need full access to
-                                                                                            analytics data, but don't need to
-                                                                                            update business settings
-                                                                                        </div>
+                                                                            <!--end::User-->
+                                                                            <!--begin::User-->
+                                                                            <div class="rounded d-flex flex-stack bg-active-lighten p-4" data-user-id="0">
+                                                                                <!--begin::Details-->
+                                                                                <div class="d-flex align-items-center">
+                                                                                    <!--begin::Checkbox-->
+                                                                                    <label class="form-check form-check-custom form-check-solid me-5">
+                                                                                        <input class="form-check-input" type="checkbox" name="users" data-kt-check="true" data-kt-check-target="[data-user-id='2']" value="0" />
                                                                                     </label>
-                                                                                    <!--end::Label-->
+                                                                                    <!--end::Checkbox-->
+                                                                                    <!--begin::Avatar-->
+                                                                                    <div class="symbol symbol-35px symbol-circle">
+                                                                                        <span class="symbol-label bg-warning text-inverse-warning fw-bolder">DR</span>
+                                                                                    </div>
+                                                                                    <!--end::Avatar-->
+                                                                                    <!--begin::Details-->
+                                                                                    <div class="ms-5">
+                                                                                        <a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2 text-truncate w-40">Doğukan Ramazan Uzun..</a>
+                                                                                        <div class="fw-bold text-muted">ruzunkavak@ritma.com.tr</div>
+                                                                                    </div>
+                                                                                    <!--end::Details-->
                                                                                 </div>
-                                                                                <!--end::Radio-->
-                                                                            </div>
-                                                                            <!--end::Input row-->
-                                                                            <div class="separator separator-dashed my-5">
-                                                                            </div>
-                                                                            <!--begin::Input row-->
-                                                                            <div class="d-flex fv-row">
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <!--begin::Input-->
-                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_3" name="user_role" type="radio" value="3" />
-                                                                                    <!--end::Input-->
-                                                                                    <!--begin::Label-->
-                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_3">
-                                                                                        <div class="fw-bolder text-gray-800">
-                                                                                            Support
-                                                                                        </div>
-                                                                                        <div class="text-gray-600">
-                                                                                            Best for
-                                                                                            employees who regularly refund
-                                                                                            payments and respond to disputes
-                                                                                        </div>
-                                                                                    </label>
-                                                                                    <!--end::Label-->
+                                                                                <!--end::Details-->
+                                                                                <!--begin::Access menu-->
+                                                                                <div class="ms-2 w-150px">
+                                                                                    <select class="form-select form-select-solid form-select-sm" data-control="select2" data-hide-search="true">
+                                                                                        <option value="1">Görüntüleme</option>
+                                                                                        <option value="2" selected="selected">Tüm Yetkiler</option>
+                                                                                        <option value="3">Gör. ve Ekleme</option>
+                                                                                    </select>
                                                                                 </div>
-                                                                                <!--end::Radio-->
+                                                                                <!--end::Access menu-->
                                                                             </div>
-                                                                            <!--end::Input row-->
-                                                                            <div class="separator separator-dashed my-5">
-                                                                            </div>
-                                                                            <!--begin::Input row-->
-                                                                            <div class="d-flex fv-row">
-                                                                                <!--begin::Radio-->
-                                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                                    <!--begin::Input-->
-                                                                                    <input class="form-check-input me-3" id="kt_modal_update_role_option_4" name="user_role" type="radio" value="4" />
-                                                                                    <!--end::Input-->
-                                                                                    <!--begin::Label-->
-                                                                                    <label class="form-check-label" for="kt_modal_update_role_option_4">
-                                                                                        <div class="fw-bolder text-gray-800">
-                                                                                            Trial
-                                                                                        </div>
-                                                                                        <div class="text-gray-600">
-                                                                                            Best for
-                                                                                            people who need to preview content
-                                                                                            data, but don't need to make any
-                                                                                            updates
-                                                                                        </div>
-                                                                                    </label>
-                                                                                    <!--end::Label-->
-                                                                                </div>
-                                                                                <!--end::Radio-->
-                                                                            </div>
-                                                                            <!--end::Input row-->
-                                                                            <!--end::Roles-->
+                                                                            <!--end::User-->
                                                                         </div>
-                                                                        <!--end::Input group-->
                                                                     </div>
                                                                     <!--end::Scroll-->
                                                                     <!--begin::Actions-->
                                                                     <div class="text-center pt-15">
                                                                         <button class="btn btn-light me-3" data-kt-users-modal-action="cancel" type="reset">
-                                                                            Discard
+                                                                            İptal Et
                                                                         </button>
                                                                         <button class="btn btn-primary" data-kt-users-modal-action="submit" type="submit">
                                                                             <span class="indicator-label">
-                                                                                Submit
+                                                                                Aşamayı Kaydet
                                                                             </span>
                                                                             <span class="indicator-progress">
-                                                                                Please wait...
+                                                                                Lütfen Bekleyiniz...
                                                                                 <span class="spinner-border spinner-border-sm align-middle ms-2">
                                                                                 </span>
                                                                             </span>
@@ -777,7 +695,7 @@
                                         <!--end::Card header-->
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-xl-4">
+                                <div class="col-md-12">
                                     <!--begin::Card-->
                                     <a href="#" class="card border-hover-primary">
                                         <!--begin::Card header-->
@@ -791,7 +709,7 @@
                                             <!--end::Car Title-->
                                             <!--begin::Card toolbar-->
                                             <div class="card-toolbar">
-                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-pen fs-2"></i> Düzenle</button>
+                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-pen fs-2"></i> Düzenle</button>
                                             </div>
                                             <!--end::Card toolbar-->
                                         </div>
@@ -838,7 +756,7 @@
                                                 <!--begin::User-->
                                                 <!--begin::User-->
                                                 <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
-                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-plus text-white fs-2"></i></span>
+                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-plus text-white fs-2"></i></span>
                                                 </div>
                                                 <!--begin::User-->
                                             </div>
@@ -848,7 +766,7 @@
                                     </a>
                                     <!--end::Card-->
                                 </div>
-                                  <div class="col-md-6 col-xl-4">
+                                <div class="col-md-12">
                                     <!--begin::Card-->
                                     <a href="#" class="card border-hover-primary">
                                         <!--begin::Card header-->
@@ -862,7 +780,7 @@
                                             <!--end::Car Title-->
                                             <!--begin::Card toolbar-->
                                             <div class="card-toolbar">
-                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-pen fs-2"></i> Düzenle</button>
+                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-pen fs-2"></i> Düzenle</button>
                                             </div>
                                             <!--end::Card toolbar-->
                                         </div>
@@ -897,10 +815,192 @@
                                                     <img alt="Pic" src="assets/media/avatars/300-6.jpg" />
                                                 </div>
                                                 <!--begin::User-->
-                                                
                                                 <!--begin::User-->
                                                 <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
-                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_users_search"><i class="las la-plus text-white fs-2"></i></span>
+                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-plus text-white fs-2"></i></span>
+                                                </div>
+                                                <!--begin::User-->
+                                            </div>
+                                            <!--end::Users-->
+                                        </div>
+                                        <!--end:: Card body-->
+                                    </a>
+                                    <!--end::Card-->
+                                </div>
+                                <div class="col-md-12">
+                                    <!--begin::Card-->
+                                    <a href="#" class="card border-hover-primary">
+                                        <!--begin::Card header-->
+                                        <div class="card-header border-0 pt-9">
+                                            <!--begin::Card Title-->
+                                            <div class="card-title m-0">
+                                                <!--begin::Avatar-->
+                                                <div class="fs-3 fw-bolder text-dark">3. Aşama</div>
+                                                <!--end::Avatar-->
+                                            </div>
+                                            <!--end::Car Title-->
+                                            <!--begin::Card toolbar-->
+                                            <div class="card-toolbar">
+                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-pen fs-2"></i> Düzenle</button>
+                                            </div>
+                                            <!--end::Card toolbar-->
+                                        </div>
+                                        <!--end:: Card header-->
+                                        <!--begin:: Card body-->
+                                        <div class="card-body p-9">
+                                            <!--begin::Name-->
+                                            <!--end::Name-->
+                                            <!--begin::Description-->
+                                            <p class="text-gray-400 fw-bold fs-5 mt-1 mb-7">Başvurunun Değerlendirilmesi ve Belgelerin Kontrol Edilmesi</p>
+                                            <!--end::Description-->
+                                            <!--begin::Info-->
+                                            <div class="d-flex flex-wrap mb-5">
+                                                <!--begin::Due-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-7 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">8 Görev</div>
+                                                    <div class="fw-bold text-gray-400">Aşamanın Görevleri</div>
+                                                </div>
+                                                <!--end::Due-->
+                                                <!--begin::Budget-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">567 adet</div>
+                                                    <div class="fw-bold text-gray-400">Bekleyen Başvurular</div>
+                                                </div>
+                                                <!--end::Budget-->
+                                            </div>
+                                            <!--end::Info-->
+                                            <!--begin::Users-->
+                                            <div class="symbol-group symbol-hover">
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Emma Smith">
+                                                    <img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+                                                </div>
+                                                <!--begin::User-->
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
+                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-plus text-white fs-2"></i></span>
+                                                </div>
+                                                <!--begin::User-->
+                                            </div>
+                                            <!--end::Users-->
+                                        </div>
+                                        <!--end:: Card body-->
+                                    </a>
+                                    <!--end::Card-->
+                                </div>
+                                <div class="col-md-12">
+                                    <!--begin::Card-->
+                                    <a href="#" class="card border-hover-primary">
+                                        <!--begin::Card header-->
+                                        <div class="card-header border-0 pt-9">
+                                            <!--begin::Card Title-->
+                                            <div class="card-title m-0">
+                                                <!--begin::Avatar-->
+                                                <div class="fs-3 fw-bolder text-dark">4. Aşama</div>
+                                                <!--end::Avatar-->
+                                            </div>
+                                            <!--end::Car Title-->
+                                            <!--begin::Card toolbar-->
+                                            <div class="card-toolbar">
+                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-pen fs-2"></i> Düzenle</button>
+                                            </div>
+                                            <!--end::Card toolbar-->
+                                        </div>
+                                        <!--end:: Card header-->
+                                        <!--begin:: Card body-->
+                                        <div class="card-body p-9">
+                                            <!--begin::Name-->
+                                            <!--end::Name-->
+                                            <!--begin::Description-->
+                                            <p class="text-gray-400 fw-bold fs-5 mt-1 mb-7">Başvurunun Değerlendirilmesi ve Belgelerin Kontrol Edilmesi</p>
+                                            <!--end::Description-->
+                                            <!--begin::Info-->
+                                            <div class="d-flex flex-wrap mb-5">
+                                                <!--begin::Due-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-7 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">8 Görev</div>
+                                                    <div class="fw-bold text-gray-400">Aşamanın Görevleri</div>
+                                                </div>
+                                                <!--end::Due-->
+                                                <!--begin::Budget-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">567 adet</div>
+                                                    <div class="fw-bold text-gray-400">Bekleyen Başvurular</div>
+                                                </div>
+                                                <!--end::Budget-->
+                                            </div>
+                                            <!--end::Info-->
+                                            <!--begin::Users-->
+                                            <div class="symbol-group symbol-hover">
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Emma Smith">
+                                                    <img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+                                                </div>
+                                                <!--begin::User-->
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
+                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-plus text-white fs-2"></i></span>
+                                                </div>
+                                                <!--begin::User-->
+                                            </div>
+                                            <!--end::Users-->
+                                        </div>
+                                        <!--end:: Card body-->
+                                    </a>
+                                    <!--end::Card-->
+                                </div>
+                                <div class="col-md-12">
+                                    <!--begin::Card-->
+                                    <a href="#" class="card border-hover-primary">
+                                        <!--begin::Card header-->
+                                        <div class="card-header border-0 pt-9">
+                                            <!--begin::Card Title-->
+                                            <div class="card-title m-0">
+                                                <!--begin::Avatar-->
+                                                <div class="fs-3 fw-bolder text-dark">5. Aşama</div>
+                                                <!--end::Avatar-->
+                                            </div>
+                                            <!--end::Car Title-->
+                                            <!--begin::Card toolbar-->
+                                            <div class="card-toolbar">
+                                                <button class="btn btn-sm btn-bg-light" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-pen fs-2"></i> Düzenle</button>
+                                            </div>
+                                            <!--end::Card toolbar-->
+                                        </div>
+                                        <!--end:: Card header-->
+                                        <!--begin:: Card body-->
+                                        <div class="card-body p-9">
+                                            <!--begin::Name-->
+                                            <!--end::Name-->
+                                            <!--begin::Description-->
+                                            <p class="text-gray-400 fw-bold fs-5 mt-1 mb-7">Başvurunun Değerlendirilmesi ve Belgelerin Kontrol Edilmesi</p>
+                                            <!--end::Description-->
+                                            <!--begin::Info-->
+                                            <div class="d-flex flex-wrap mb-5">
+                                                <!--begin::Due-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-7 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">8 Görev</div>
+                                                    <div class="fw-bold text-gray-400">Aşamanın Görevleri</div>
+                                                </div>
+                                                <!--end::Due-->
+                                                <!--begin::Budget-->
+                                                <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 mb-3">
+                                                    <div class="fs-6 text-gray-800 fw-bolder">567 adet</div>
+                                                    <div class="fw-bold text-gray-400">Bekleyen Başvurular</div>
+                                                </div>
+                                                <!--end::Budget-->
+                                            </div>
+                                            <!--end::Info-->
+                                            <!--begin::Users-->
+                                            <div class="symbol-group symbol-hover">
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Emma Smith">
+                                                    <img alt="Pic" src="assets/media/avatars/300-6.jpg" />
+                                                </div>
+                                                <!--begin::User-->
+                                                <!--begin::User-->
+                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yeni İlgili Ekle">
+                                                    <span class="symbol-label bg-primary " data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-plus text-white fs-2"></i></span>
                                                 </div>
                                                 <!--begin::User-->
                                             </div>
@@ -2897,7 +2997,7 @@
                             <!--end::Heading-->
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
-                                <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_users_search">Add Contact</a>
+                                <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Contact</a>
                             </div>
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
