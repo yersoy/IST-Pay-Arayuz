@@ -530,7 +530,7 @@
                                                             <div class="flex-grow-1 px-10">
                                                                 <a href="#" class="text-gray-800 text-hover-primary fw-bolder fs-6 ">Kaç Personel Var Sisteme Girilecek</a>
                                                             </div>
-                                                             <a class="btn btn-sm btn-bg-light me-3" href="#">
+                                                            <a class="btn btn-sm btn-bg-light me-3" href="#">
                                                                 Tek Seçmeli
                                                             </a>
                                                             <a href="#" class="btn btn-sm btn-light btn-icon btn-active-color-primary me-3" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="las la-trash fs-2"></i></a>
@@ -555,7 +555,7 @@
                                                                 <!--end::Controls-->
                                                             </div>
                                                             <div class="card-toolbar">
-                                                                <a href="#" class="btn btn-light-primary btn-sm fw-bolder"><i class="las la-plus fs-2 me-2"></i>Yeni Dosya</a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#kt_modal_new_file" class="btn btn-light-primary btn-sm fw-bolder"><i class="las la-plus fs-2 me-2"></i>Yeni Dosya</a>
                                                             </div>
                                                         </div>
                                                         <div class="card-body p-6">
@@ -2245,6 +2245,8 @@
                                     <option value="2">Tek Seçmeli</option>
                                     <option value="3">Evet & Hayır</option>
                                     <option value="5">Dosya & Belge</option>
+                                    <option value="6">Tarih</option>
+                                    <option value="6">Metin</option>
                                 </select>
                             </div>
                             <!--end::Col-->
@@ -2272,8 +2274,18 @@
                             <input class="form-control form-control-solid" id="type-tags" value="İstanbul,Kocaeli,Ankara" />
                         </div>
                         <!--end::Input group-->
-                         <!--begin::Input group-->
-                        
+                        <!--begin::Input group-->
+                        <div class="d-flex flex-column mb-8 fv-row">
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                <span class="required">REGEX</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target priorty"></i>
+                            </label>
+                            <!--end::Label-->
+                            <input class="form-control form-control-solid" value="### REGEX ###" />
+                        </div>
+                        <!--end::Input group-->
+                        <!--begin::Input group-->
                         <!--begin::Input group-->
                         <div class="mb-15 fv-row">
                             <!--begin::Wrapper-->
@@ -2288,7 +2300,141 @@
                                     <!--begin::Checkbox-->
                                     <label class="form-check form-check-custom form-check-solid me-10">
                                         <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" checked="checked" />
-                                        <span class="form-check-label fw-bold">Zorunlu</span>
+                                        <span class="form-check-label fw-bold">Evet</span>
+                                    </label>
+                                    <!--end::Checkbox-->
+                                </div>
+                                <!--end::Checkboxes-->
+                                <!--begin::Checkboxes-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Checkbox-->
+                                    <label class="form-check form-check-custom form-check-solid me-10">
+                                        <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" />
+                                        <span class="form-check-label fw-bold">Hayır</span>
+                                    </label>
+                                    <!--end::Checkbox-->
+                                </div>
+                                <!--end::Checkboxes-->
+                            </div>
+                            <!--end::Wrapper-->
+                        </div>
+                        <!--end::Input group-->
+                        <!--begin::Actions-->
+                        <div class="text-center">
+                            <button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">İptal</button>
+                            <button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
+                                <span class="indicator-label">Tamamla</span>
+                                <span class="indicator-progress">Lütfen Bekleyin... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                </span>
+                            </button>
+                        </div>
+                        <!--end::Actions-->
+                    </form>
+                    <!--end:Form-->
+                </div>
+                <!--end::Modal body-->
+            </div>
+            <!--end::Modal content-->
+        </div>
+        <!--end::Modal dialog-->
+    </div>
+    <!--end::Modal - New Target-->
+    <!--begin::Modal - New File-->
+    <div class="modal fade" id="kt_modal_new_file" tabindex="-1" aria-hidden="true">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog modal-dialog-centered mw-650px">
+            <!--begin::Modal content-->
+            <div class="modal-content rounded">
+                <!--begin::Modal header-->
+                <div class="modal-header pb-0 border-0 justify-content-end">
+                    <!--begin::Close-->
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                        <span class="svg-icon svg-icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+                                <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+                            </svg>
+                        </span>
+                        <!--end::Svg Icon-->
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--begin::Modal header-->
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+                    <!--begin:Form-->
+                    <form id="kt_modal_new_target_form" class="form" action="#">
+                        <!--begin::Heading-->
+                        <div class="mb-13 text-center">
+                            <!--begin::Title-->
+                            <h1 class="mb-3"><i class="las la-plus fs-3 me-6"></i> Yeni Dosya Türü Ekle</h1>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Input group-->
+                        <div class="d-flex flex-column mb-8 fv-row">
+                            <!--begin::Label-->
+                            <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                <span class="required">Dosyanın İsmi</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7"></i>
+                            </label>
+                            <!--end::Label-->
+                            <input type="text" class="form-control form-control-solid" placeholder="Başlık Giriniz" name="target_title" />
+                        </div>
+                        <!--end::Input group-->
+                        <!--begin::Input group-->
+                        <div class="row g-9 mb-8">
+                            <!--begin::Col-->
+                            <div class="col-md-6 fv-row">
+                                <label class="required fs-6 fw-bold mb-2">Dosya Türü</label>
+                                <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Dosya Türü Seçiniz.." name="target_assign">
+                                    <option value="">Tür Seçiniz..</option>
+                                    <option value="1">PDF Dosyası</option>
+                                    <option value="2">Resim Dosyası</option>
+                                    <option value="3">Word Dosyası</option>
+                                    <option value="5">Powerpoint Dosyası</option>
+                                </select>
+                            </div>
+                            <!--end::Col-->
+                            <!--begin::Col-->
+                            <div class="col-md-6 fv-row">
+                                <label class="required fs-6 fw-bold mb-2">Dosya Önceliği</label>
+                                <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Dosya Önceliği Seçiniz.." name="target_assign">
+                                    <option value="">Tür Seçiniz..</option>
+                                    <option value="1">Çok Önemli (Kırmızı)</option>
+                                    <option value="2">Önemli (Sarı)</option>
+                                    <option value="3">Normal (Mavi)</option>
+                                </select>
+                            </div>
+                            <!--end::Col-->
+                        </div>
+      
+                        <!--begin::Input group-->
+                        <div class="mb-15 fv-row">
+                            <!--begin::Wrapper-->
+                            <div class="d-flex flex-stack">
+                                <!--begin::Label-->
+                                <div class="fw-bold me-5">
+                                    <label class="fs-6">Zorunlu mu ?</label>
+                                </div>
+                                <!--end::Label-->
+                                <!--begin::Checkboxes-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Checkbox-->
+                                    <label class="form-check form-check-custom form-check-solid me-10">
+                                        <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" checked="checked" />
+                                        <span class="form-check-label fw-bold">Evet</span>
+                                    </label>
+                                    <!--end::Checkbox-->
+                                </div>
+                                <!--end::Checkboxes-->
+                                <!--begin::Checkboxes-->
+                                <div class="d-flex align-items-center">
+                                    <!--begin::Checkbox-->
+                                    <label class="form-check form-check-custom form-check-solid me-10">
+                                        <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" />
+                                        <span class="form-check-label fw-bold">Hayır</span>
                                     </label>
                                     <!--end::Checkbox-->
                                 </div>
