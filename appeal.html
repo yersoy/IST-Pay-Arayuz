@@ -236,7 +236,7 @@
                                     <div class="card card-flush mb-0" data-kt-sticky="false" data-kt-sticky-name="inbox-aside-sticky" data-kt-sticky-offset="{default: false, xl: '0px'}" data-kt-sticky-width="{lg: '275px'}" data-kt-sticky-left="auto" data-kt-sticky-top="150px" data-kt-sticky-animation="false" data-kt-sticky-zindex="95">
                                         <!--begin::Aside content-->
                                         <div class="card-body">
-                                           <!--begin::Button-->
+                                            <!--begin::Button-->
                                             <a class="btn btn-light text-uppercase w-100 mb-10" href="#" data-bs-target="#kt_modal_add_user" data-bs-toggle="modal">
                                                 <i class="las la-plus fs-2 me-2">
                                                 </i>
@@ -337,8 +337,8 @@
                                                 </a>
                                                 <!--end::Back-->
                                                 <a class="btn btn-sm btn-bg-light" href="#"> <i class="las la-bell fs-2"></i> Hatırlat</a>
-                                                <a class="btn btn-sm btn-light-success ms-2" href="#"> <i class="las la-step-forward fs-2"></i> 2. Aşamaya Geçir</a>
-                                                <a class="btn btn-sm btn-light-danger ms-2" href="#"> <i class="las la-ban fs-2"></i> Başvuruyu Reddet</a>
+                                                <a class="btn btn-sm btn-light-success ms-2" href="#" id="stepup"> <i class="las la-step-forward fs-2"></i> 2. Aşamaya Geçir</a>
+                                                <a class="btn btn-sm btn-light-danger ms-2" href="#" data-bs-target="#kt_modal_reject" data-bs-toggle="modal"> <i class="las la-ban fs-2"></i> Başvuruyu Reddet</a>
                                             </div>
                                             <!--end::Actions-->
                                             <!--begin::Pagination-->
@@ -509,96 +509,96 @@
                                                     <div class="card h-100 flex-center bg-light border-primary border p-8">
                                                         <!--begin::Checkbox-->
                                                         <div class="position-absolute start-0" style="top: 15px;">
-                                                            <div class="form-check form-check-custom form-check-solid mx-5" >
-                                                            <input class=" form-check-input" type="checkbox" value="" checked="" />
+                                                            <div class="form-check form-check-custom form-check-solid mx-5">
+                                                                <input class=" form-check-input" type="checkbox" value="" checked="" />
+                                                            </div>
                                                         </div>
+                                                        <!--end::Checkbox-->
+                                                        <!--begin::Image-->
+                                                        <img src="assets/media/svg/files/pdf.svg" class="mb-5" alt="" style="max-width: 65px;">
+                                                        <!--end::Image-->
+                                                        <!--begin::Link-->
+                                                        <a href="#" class="text-hover-primary fs-5 fw-bolder mb-2 text-center">Vergi Levhası</a>
+                                                        <!--end::Link-->
+                                                        <!--begin::Description-->
+                                                        <div class="fs-7 fw-bold text-gray-400 text-center">11 Ocak 18:48</div>
+                                                        <!--end::Description-->
                                                     </div>
-                                                    <!--end::Checkbox-->
-                                                    <!--begin::Image-->
-                                                    <img src="assets/media/svg/files/pdf.svg" class="mb-5" alt="" style="max-width: 65px;">
-                                                    <!--end::Image-->
-                                                    <!--begin::Link-->
-                                                    <a href="#" class="text-hover-primary fs-5 fw-bolder mb-2 text-center">Vergi Levhası</a>
-                                                    <!--end::Link-->
-                                                    <!--begin::Description-->
-                                                    <div class="fs-7 fw-bold text-gray-400 text-center">11 Ocak 18:48</div>
-                                                    <!--end::Description-->
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4 col-lg-4 col-xl-3">
-                                                <div class="card h-100 flex-center border-gray-400 border border-dashed p-8">
-                                                    <!--begin::Checkbox-->
+                                                <div class="col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="card h-100 flex-center border-gray-400 border border-dashed p-8">
+                                                        <!--begin::Checkbox-->
                                                         <div class="position-absolute start-0" style="top: 15px;">
-                                                            <div class="form-check form-check-custom form-check-solid mx-5" >
-                                                            <input class=" form-check-input" type="checkbox" value=""/>
+                                                            <div class="form-check form-check-custom form-check-solid mx-5">
+                                                                <input class=" form-check-input" type="checkbox" value="" />
+                                                            </div>
                                                         </div>
+                                                        <!--end::Checkbox-->
+                                                        <!--begin::Image-->
+                                                        <img src="assets/media/svg/files/png.svg" class="mb-5" alt="" style="max-width: 65px;">
+                                                        <!--end::Image-->
+                                                        <!--begin::Link-->
+                                                        <a href="#" class="text-hover-primary fs-5 fw-bolder mb-2 text-center">Logo & Portre</a>
+                                                        <!--end::Link-->
+                                                        <!--begin::Description-->
+                                                        <div class="fs-7 fw-bold text-gray-400">Zorunlu Değil</div>
+                                                        <!--end::Description-->
                                                     </div>
-                                                    <!--end::Checkbox-->
-                                                    <!--begin::Image-->
-                                                    <img src="assets/media/svg/files/png.svg" class="mb-5" alt="" style="max-width: 65px;">
-                                                    <!--end::Image-->
-                                                    <!--begin::Link-->
-                                                    <a href="#" class="text-hover-primary fs-5 fw-bolder mb-2 text-center">Logo & Portre</a>
-                                                    <!--end::Link-->
-                                                    <!--begin::Description-->
-                                                    <div class="fs-7 fw-bold text-gray-400">Zorunlu Değil</div>
-                                                    <!--end::Description-->
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4 col-lg-4 col-xl-3">
-                                                <div class="card h-100 flex-center border-gray-400 border border-dashed p-8">
-                                                     <!--begin::Checkbox-->
+                                                <div class="col-md-4 col-lg-4 col-xl-3">
+                                                    <div class="card h-100 flex-center border-gray-400 border border-dashed p-8">
+                                                        <!--begin::Checkbox-->
                                                         <div class="position-absolute start-0" style="top: 15px;">
-                                                            <div class="form-check form-check-custom form-check-solid mx-5" >
-                                                            <input class=" form-check-input" type="checkbox" value=""/>
+                                                            <div class="form-check form-check-custom form-check-solid mx-5">
+                                                                <input class=" form-check-input" type="checkbox" value="" />
+                                                            </div>
                                                         </div>
+                                                        <!--end::Checkbox-->
+                                                        <!--begin::Image-->
+                                                        <img src="assets/media/svg/files/pdf.svg" class="mb-5" alt="" style="max-width: 65px;">
+                                                        <!--end::Image-->
+                                                        <!--begin::Link-->
+                                                        <a href="#" class="text-hover-primary text-center fs-5 fw-bolder mb-2">Adli Sicil Belgesi</a>
+                                                        <!--end::Link-->
+                                                        <!--begin::Description-->
+                                                        <div class="fs-7 fw-bold text-gray-400 text-center">Zorunlu</div>
+                                                        <!--end::Description-->
                                                     </div>
-                                                    <!--end::Checkbox-->
-                                                    <!--begin::Image-->
-                                                    <img src="assets/media/svg/files/pdf.svg" class="mb-5" alt="" style="max-width: 65px;">
-                                                    <!--end::Image-->
-                                                    <!--begin::Link-->
-                                                    <a href="#" class="text-hover-primary text-center fs-5 fw-bolder mb-2">Adli Sicil Belgesi</a>
-                                                    <!--end::Link-->
-                                                    <!--begin::Description-->
-                                                    <div class="fs-7 fw-bold text-gray-400 text-center">Zorunlu</div>
-                                                    <!--end::Description-->
                                                 </div>
-                                            </div>
-                                            <div class="ccol-md-4 col-lg-4 col-xl-3">
-                                                <div class="card h-100 flex-center border-gray-400 border border-dashed p-8">
-                                                     <!--begin::Checkbox-->
+                                                <div class="ccol-md-4 col-lg-4 col-xl-3">
+                                                    <div class="card h-100 flex-center border-gray-400 border border-dashed p-8">
+                                                        <!--begin::Checkbox-->
                                                         <div class="position-absolute start-0" style="top: 15px;">
-                                                            <div class="form-check form-check-custom form-check-solid mx-5" >
-                                                            <input class="form-check-input" type="checkbox" value="" />
+                                                            <div class="form-check form-check-custom form-check-solid mx-5">
+                                                                <input class="form-check-input" type="checkbox" value="" />
+                                                            </div>
                                                         </div>
+                                                        <!--end::Checkbox-->
+                                                        <img src="assets/media/svg/files/doc.svg" class="mb-5" alt="" style="max-width: 65px;">
+                                                        <!--end::Image-->
+                                                        <!--begin::Link-->
+                                                        <a href="#" class="text-hover-primary text-center fs-5 fw-bolder mb-2">Başvuru Formu</a>
+                                                        <!--end::Link-->
                                                     </div>
-                                                    <!--end::Checkbox-->
-                                                    <img src="assets/media/svg/files/doc.svg" class="mb-5" alt="" style="max-width: 65px;">
-                                                    <!--end::Image-->
-                                                    <!--begin::Link-->
-                                                    <a href="#" class="text-hover-primary text-center fs-5 fw-bolder mb-2">Başvuru Formu</a>
-                                                    <!--end::Link-->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--end::Card-->
                                 </div>
-                                <!--end::Card-->
+                                <!--end::Content-->
                             </div>
-                            <!--end::Content-->
+                            <!--end::Inbox App - View & Reply -->
                         </div>
-                        <!--end::Inbox App - View & Reply -->
+                        <!--end::Container-->
                     </div>
-                    <!--end::Container-->
+                    <!--end::Post-->
                 </div>
-                <!--end::Post-->
+                <!--end::Content-->
             </div>
-            <!--end::Content-->
+            <!--end::Wrapper-->
         </div>
-        <!--end::Wrapper-->
-    </div>
-    <!--end::Page-->
+        <!--end::Page-->
     </div>
     <!--end::Root-->
     <!--begin::Drawers-->
@@ -3040,7 +3040,7 @@
         <!--end::Modal dialog-->
     </div>
     <!--end::Modal - Users Search-->
-     <!--begin::Modal - Add task-->
+    <!--begin::Modal - Add task-->
     <div aria-hidden="true" class="modal fade" id="kt_modal_add_user" tabindex="-1">
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-650px">
@@ -3278,6 +3278,74 @@
         <!--end::Modal dialog-->
     </div>
     <!--end::Modal - Add task-->
+    <!--begin::Modal - Add task-->
+    <div aria-hidden="true" class="modal fade" id="kt_modal_reject" tabindex="-1">
+        <!--begin::Modal dialog-->
+        <div class="modal-dialog modal-dialog-centered mw-650px">
+            <!--begin::Modal content-->
+            <div class="modal-content">
+                <!--begin::Modal header-->
+                <div class="modal-header" id="kt_modal_add_user_header">
+                    <!--begin::Modal title-->
+                    <h2 class="fw-bolder">
+                        Başvuru Reddetme Önerisi
+                    </h2>
+                    <!--end::Modal title-->
+                    <!--begin::Close-->
+                    <div class="btn btn-icon btn-sm btn-active-icon-primary" data-kt-users-modal-action="close">
+                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                        <span class="svg-icon svg-icon-1">
+                            <svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="black" height="2" opacity="0.5" rx="1" transform="rotate(-45 6 17.3137)" width="16" x="6" y="17.3137">
+                                </rect>
+                                <rect fill="black" height="2" rx="1" transform="rotate(45 7.41422 6)" width="16" x="7.41422" y="6">
+                                </rect>
+                            </svg>
+                        </span>
+                        <!--end::Svg Icon-->
+                    </div>
+                    <!--end::Close-->
+                </div>
+                <!--end::Modal header-->
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y">
+                    <!--begin::Form-->
+                    <form action="#" class="form" id="kt_modal_add_user_form">
+                        <!--begin::Scroll-->
+                        <div class="d-flex flex-column scroll-y me-n7 pe-7" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-dependencies="#kt_modal_add_user_header" data-kt-scroll-max-height="auto" data-kt-scroll-offset="300px" data-kt-scroll-wrappers="#kt_modal_add_user_scroll" id="kt_modal_add_user_scroll">
+                            <!--begin::Input group-->
+                            <div class="fv-row mb-7">
+                                <!--begin::Label-->
+                                <label class="required fw-bold fs-6 mb-2">
+                                    Başvuru Reddetme Önerisi
+                                </label>
+                                <!--end::Label-->
+                                <!--begin::Input-->
+                                <textarea class="form-control form-control-solid mb-3 mb-lg-0" placeholder="Açıklama Giriniz" type="text"></textarea>
+                                <!--end::Input-->
+                            </div>
+                        </div>
+                        <!--end::Scroll-->
+                        <!--begin::Actions-->
+                        <div class="text-center pt-15">
+                            <button class="btn btn-primary me-3" data-kt-users-modal-action="cancel" type="reset">
+                                İptal
+                            </button>
+                            <button class="btn btn-danger" type="submit">
+                                Başvuruyu Reddet
+                            </button>
+                        </div>
+                        <!--end::Actions-->
+                    </form>
+                    <!--end::Form-->
+                </div>
+                <!--end::Modal body-->
+            </div>
+            <!--end::Modal content-->
+        </div>
+        <!--end::Modal dialog-->
+    </div>
+    <!--end::Modal - Add task-->
     <!--end::Modals-->
     <!--begin::Javascript-->
     <script>
@@ -3298,6 +3366,26 @@
     <script src="assets/js/custom/utilities/modals/users-search.js"></script>
     <!--end::Page Custom Javascript-->
     <!--end::Javascript-->
+    <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+        $("#stepup").click(function() {
+            Swal.fire({
+                text: "Firma 3. Aşamaya Geçiriliyor",
+                showCancelButton: 1,
+                buttonsStyling: !1,
+                confirmButtonText: "3. Aşamaya Geçir",
+                cancelButtonText: "Hayır, İptal Et",
+                customClass: {
+                    confirmButton: "btn btn-primary",
+                    cancelButton: "btn btn-active-light"
+                },
+                icon: "success",
+                buttonsStyling: !1,
+                confirmButtonText: "Devam Et"
+            });
+        });
+    });
+    </script>
 </body>
 <!--end::Body-->
 
