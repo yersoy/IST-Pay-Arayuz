@@ -269,101 +269,224 @@
                         <div class="container-xxl" id="kt_content_container">
                             <!--begin::Row-->
                             <div class="row g-5 g-xl-10 mb-10">
-                                <div class="col-xl-4">
+                                <div class="col-xl-6">
                                     <!--begin::List Widget 3-->
                                     <div class="card card-xl-stretch mb-xl-8">
                                         <!--begin::Header-->
                                         <div class="card-header border-0">
                                             <h3 class="card-title fw-bolder text-dark">
-                                                En Son İşlemler
+                                                Atanmış Başvurular
                                             </h3>
                                         </div>
                                         <!--end::Header-->
                                         <!--begin::Body-->
                                         <div class="card-body pt-2">
-                                            <div class="d-flex align-items-center mb-7">
-                                                <span class="bullet bullet-vertical h-40px bg-primary">
-                                                </span>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <a class="text-gray-800 text-hover-primary fw-bolder fs-6" href="#">
-                                                        Ritma Teknoloji'nin Kaydı Oluşturuldu
-                                                    </a>
-                                                    <span class="text-muted fw-bold d-block">
-                                                        bugün 10:28
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--end:Item-->
-                                            <div class="d-flex align-items-center mb-7">
-                                                <span class="bullet bullet-vertical h-40px bg-primary">
-                                                </span>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <a class="text-gray-800 text-hover-primary fw-bolder fs-6" href="#">
-                                                        Senkron Güvenliğin'nin Kaydı Oluşturuldu
-                                                    </a>
-                                                    <span class="text-muted fw-bold d-block">
-                                                        bugün 10:28
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--end:Item-->
-                                            <div class="d-flex align-items-center mb-7">
-                                                <span class="bullet bullet-vertical h-40px bg-success">
-                                                </span>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <a class="text-gray-800 text-hover-primary fw-bolder fs-6" href="#">
-                                                        Sytark Teknoloji'nin Başvurusu Tamamlandı
-                                                    </a>
-                                                    <span class="text-muted fw-bold d-block">
-                                                        bugün 9:21
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--end:Item-->
-                                            <div class="d-flex align-items-center mb-7">
-                                                <span class="bullet bullet-vertical h-40px bg-danger">
-                                                </span>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <a class="text-gray-800 text-hover-primary fw-bolder fs-6" href="#">
-                                                        Medisis Medical'in Başvurusu Reddedildi
-                                                    </a>
-                                                    <span class="text-muted fw-bold d-block">
-                                                        bugün 9:21
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--end:Item-->
-                                            <div class="d-flex align-items-center mb-7">
-                                                <span class="bullet bullet-vertical h-40px bg-warning">
-                                                </span>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <a class="text-gray-800 text-hover-primary fw-bolder fs-6" href="#">
-                                                        XYZ Teknoloji'nin Evrakları Bekleniyor
-                                                    </a>
-                                                    <span class="text-muted fw-bold d-block">
-                                                        bugün 9:21
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <!--end:Item-->
-                                            <div class="d-flex align-items-center mb-7">
-                                                <span class="bullet bullet-vertical h-40px bg-warning">
-                                                </span>
-                                                <div class="flex-grow-1 ms-4">
-                                                    <a class="text-gray-800 text-hover-primary fw-bolder fs-6" href="#">
-                                                        Beta Limited 'in Evrakları Bekleniyor
-                                                    </a>
-                                                    <span class="text-muted fw-bold d-block">
-                                                        bugün 9:21
-                                                    </span>
-                                                </div>
-                                            </div>
+                                            <!--begin::Table-->
+                                            <table id="company-table" class="table table-row-dashed align-middle fs-6 gy-4 my-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fs-7 fw-bolder">Temsilci</th>
+                                                        <th class="fs-7 fw-bolder">Bizden İlgililer</th>
+                                                        <th class="fs-7 fw-bolder">Aşama</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="min-w-175px">
+                                                            <div class="position-relative ps-6 pe-3 py-2">
+                                                                <div class="position-absolute start-0 top-0 w-4px h-100 rounded-2 bg-success"></div>
+                                                                <a href="#" class="mb-1 text-dark text-hover-primary fw-bolder">Ritma Teknoloji</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="min-w-125px">
+                                                            <!--begin::Team members-->
+                                                            <div class="symbol-group symbol-hover mb-1">
+                                                                <!--begin::User-->
+                                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Yusuf Ersoy">
+                                                                    <span class="symbol-label bg-primary text-inverse-warning fw-bolder">YE</span>
+                                                                </div>
+                                                                <!--end::User-->
+                                                                <!--begin::User-->
+                                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Selim Ünüvar">
+                                                                    <span class="symbol-label bg-warning text-inverse-warning fw-bolder">SÜ</span>
+                                                                </div>
+                                                                <!--end::User-->
+                                                                <!--begin::User-->
+                                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Ramazan Doğukan Uzunkavak">
+                                                                    <span class="symbol-label bg-light-danger text-danger fw-bolder">RU</span>
+                                                                </div>
+                                                                <!--end::User-->
+                                                                <!--begin::All users-->
+                                                                <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
+                                                                    <span class="symbol-label bg-dark text-inverse-dark fs-8 fw-bolder" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Tüm İlgililer">+3</span>
+                                                                </a>
+                                                                <!--end::All users-->
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-success">
+                                                                1. Aşama
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="min-w-175px">
+                                                            <div class="position-relative ps-6 pe-3 py-2">
+                                                                <div class="position-absolute start-0 top-0 w-4px h-100 rounded-2 bg-success"></div>
+                                                                <a href="#" class="mb-1 text-dark text-hover-primary fw-bolder">Senkron Güvenlik</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="min-w-125px">
+                                                            <!--begin::Team members-->
+                                                            <div class="symbol-group symbol-hover mb-1">
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-6.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-25.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-success">
+                                                                2. Aşama
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="min-w-175px">
+                                                            <div class="position-relative ps-6 pe-3 py-2">
+                                                                <div class="position-absolute start-0 top-0 w-4px h-100 rounded-2 bg-primary"></div>
+                                                                <a href="#" class="mb-1 text-dark text-hover-primary fw-bolder">Yılmaz Ataer</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="min-w-125px">
+                                                            <!--begin::Team members-->
+                                                            <div class="symbol-group symbol-hover mb-1">
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-6.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::User-->
+                                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Selim Ünüvar">
+                                                                    <span class="symbol-label bg-warning text-inverse-warning fw-bolder">SÜ</span>
+                                                                </div>
+                                                                <!--end::User-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-25.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-9.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <div class="symbol-label bg-light-danger">
+                                                                        <span class="fs-7 text-danger">E</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::All users-->
+                                                                <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
+                                                                    <span class="symbol-label bg-dark text-inverse-dark fs-8 fw-bolder" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Tüm İlgililer">+3</span>
+                                                                </a>
+                                                                <!--end::All users-->
+                                                            </div>
+                                                        </td>
+                                                       <td>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-primary">
+                                                                3. Aşama
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="min-w-175px">
+                                                            <div class="position-relative ps-6 pe-3 py-2">
+                                                                <div class="position-absolute start-0 top-0 w-4px h-100 rounded-2 bg-success"></div>
+                                                                <a href="#" class="mb-1 text-dark text-hover-primary fw-bolder">Aras Gurup</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="min-w-125px">
+                                                            <!--begin::Team members-->
+                                                            <div class="symbol-group symbol-hover mb-1">
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-6.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::User-->
+                                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Selim Ünüvar">
+                                                                    <span class="symbol-label bg-warning text-inverse-warning fw-bolder">SÜ</span>
+                                                                </div>
+                                                                <!--end::User-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-25.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <img src="assets/media/avatars/300-9.jpg" alt="" />
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::Member-->
+                                                                <div class="symbol symbol-35px symbol-circle symbol-25px">
+                                                                    <div class="symbol-label bg-light-danger">
+                                                                        <span class="fs-7 text-danger">E</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!--end::Member-->
+                                                                <!--begin::All users-->
+                                                                <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal" data-bs-target="#kt_modal_view_users">
+                                                                    <span class="symbol-label bg-dark text-inverse-dark fs-8 fw-bolder" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Tüm İlgililer">+3</span>
+                                                                </a>
+                                                                <!--end::All users-->
+                                                            </div>
+                                                        </td>
+                                                       <td>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-success">
+                                                                1. Aşama
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="min-w-175px">
+                                                            <div class="position-relative ps-6 pe-3 py-2">
+                                                                <div class="position-absolute start-0 top-0 w-4px h-100 rounded-2 bg-danger"></div>
+                                                                <a href="#" class="mb-1 text-dark text-hover-primary fw-bolder">Ramazan Uzunkavak</a>
+                                                            </div>
+                                                        </td>
+                                                        <td class="min-w-125px">
+                                                            <!--begin::Team members-->
+                                                            <div class="symbol-group symbol-hover mb-1">
+                                                                <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="Müdür Bey">
+                                                                    <span class="symbol-label bg-info text-inverse-warning fw-bolder">MÜ</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge py-3 px-4 fs-7 badge-light-danger">
+                                                                6. Aşama
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!--end::Table-->
                                         </div>
                                         <!--end::Body-->
                                     </div>
                                     <!--end:List Widget 3-->
                                 </div>
-                                <div class="col-xl-8">
+                                <div class="col-xl-6">
                                     <!--begin::Charts Widget 1-->
                                     <div class="card card-xl-stretch">
                                         <!--begin::Header-->
