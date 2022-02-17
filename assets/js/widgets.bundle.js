@@ -35,6 +35,8 @@ var KTCardsWidget10 = {
     }
 };
 "undefined" != typeof module && (module.exports = KTCardsWidget10), KTUtil.onDOMContentLoaded((function() { KTCardsWidget10.init() }));
+
+
 var KTCardsWidget4 = {
     init: function() {
         ! function() {
@@ -172,7 +174,7 @@ var KTTablesWidget4 = function() {
                 e.querySelectorAll("tbody tr").forEach((e => {
                     const t = e.querySelectorAll("td"),
                         a = moment(t[1].innerHTML, "DD MMM YYYY, LT").format();
-                    e.closest('[data-kt-table-widget-4="subtable_template"]') || (t[1].setAttribute("data-order", a), t[1].innerText = moment(a).fromNow())
+                    e.closest('[data-kt-table-widget-4="subtable_template"]') || (t[1].setAttribute("data-order", a), t[1].innerText = moment(a).lang("tr").fromNow())
                 }));
                 const r = document.querySelector('[data-kt-table-widget-4="subtable_template"]');
                 (a = r.cloneNode(!0)).classList.remove("d-none"), r.parentNode.removeChild(r), (t = $(e).DataTable({ info: !1, order: [], lengthChange: !1, pageLength: 6, ordering: !1, paging: !1, columnDefs: [{ orderable: !1, targets: 0 }, { orderable: !1, targets: 6 }] })).on("draw", (function() { l(), i() }))
