@@ -295,6 +295,9 @@ var KTWidgets = {
                 }, {
                     name: "Bekleyen Başvurular",
                     data: [76, 85, 101, 98]
+                },{
+                    name: "Reddedilen Başvurular",
+                    data: [12, 5, 32, 18]
                 }],
                 chart: {
                     fontFamily: "inherit",
@@ -379,7 +382,7 @@ var KTWidgets = {
                         }
                     }
                 },
-                colors: [i, l],
+                colors: [i, l,KTUtil.getCssVariableValue("--bs-danger")],
                 grid: {
                     borderColor: r,
                     strokeDashArray: 4,
